@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f4ef">
+  <title>Sound Adjuster - Volume Control for Firefox</title>
+  <meta name="description" content="Turn up quiet videos, adjust the tone, and save sound settings for the sites you use. A free, open-source volume control and equalizer for Firefox.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sound Adjuster - Get the sound right.">
+  <meta property="og:description" content="Volume, equalizer, and stereo balance for Firefox. Save the settings you like for each site.">
+  <link rel="canonical" href="https://tropicaddons.github.io/sound-adjuster-website/">
+  <meta property="og:url" content="https://tropicaddons.github.io/sound-adjuster-website/">
+  <meta property="og:image" content="https://tropicaddons.github.io/sound-adjuster-website/assets/social-preview.png">
+  <meta name="twitter:image" content="https://tropicaddons.github.io/sound-adjuster-website/assets/social-preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sound Adjuster - Get the sound right.">
+  <meta name="twitter:description" content="Volume, equalizer, and stereo balance for Firefox. Save the settings you like for each site.">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <script src="theme.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="original-demo.css">
+  <link rel="stylesheet" href="demo-integration.css">
+  <script src="locales.js" defer></script>
+  <script src="i18n.js" defer></script>
+  <script src="demo-model.js" defer></script>
+  <script src="demo.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="brand" href="./" aria-label="Sound Adjuster home"><img src="assets/icon.svg" width="32" height="32" alt=""><span>Sound Adjuster</span></a>
+    <div class="header-actions">
+      <nav aria-label="Main navigation"><a class="nav-how" href="#features">How it works</a><a class="nav-questions" href="#questions">Questions</a><a class="source-link" href="https://github.com/tropicaddons/sound-adjuster" aria-label="Open source on GitHub"><span class="github-mark" aria-hidden="true"></span><span class="source-label">Open source</span><span aria-hidden="true">↗</span></a></nav>
+      <label class="language-picker"><span class="visually-hidden">Language</span><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></svg><select id="site-language" aria-label="Language"><option value="en" lang="en">English</option><option value="de" lang="de">Deutsch</option><option value="ja" lang="ja">日本語</option><option value="tr" lang="tr">Türkçe</option><option value="es" lang="es">Español</option><option value="pt" lang="pt">Português</option></select></label>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Dark theme" aria-pressed="false" title="Switch theme"><svg class="moon-icon" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.3 14A8.5 8.5 0 0 1 10 3.7 8.5 8.5 0 1 0 20.3 14Z"/></svg><svg class="sun-icon" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.4 1.4m11.2 11.2L19 19M5 19l1.4-1.4M17.6 6.4 19 5"/></svg></button>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>Made for Firefox</p>
+        <h1 id="hero-title">Get the<br>sound right<span class="accent">.</span></h1>
+        <p class="intro">Turn up quiet videos, adjust the tone, and save your settings for the sites you use.</p>
+        <a class="button" href="https://addons.mozilla.org/en-US/firefox/addon/sound-adjuster/?utm_source=product_site&amp;utm_medium=website&amp;utm_campaign=firefox_launch&amp;utm_content=hero">Get Sound Adjuster for Firefox <span aria-hidden="true">↗</span></a>
+        <p class="button-note">Free and open source. Audio stays in your browser.</p>
+      </div>
+      <figure class="product-figure">
+        <div class="product-stage">
+          <div class="demo-experience"><section class="demo original-demo" lang="en" translate="no" aria-label="Interactive Sound Adjuster demo">
+  <button id="demo-theme-toggle" type="button" title="Switch theme" aria-label="Switch theme">☼</button>
+
+  <div id="elements-pane">
+    <header>
+      <h2 class="popup-title">Sound Adjuster</h2>
+    </header>
+	<fieldset id="demo-controls" class="original-controls" disabled><legend class="visually-hidden">Audio controls for the sample</legend><div class="control-card">
+		<div id="all-elements"><div>
+			<div class="header-row">
+				<span class="element-label">All media</span>
+				<button type="button" class="element-reset" id="demo-reset">Reset</button>
+			</div>
+			<label class="gain-control">
+				<span>Gain</span>
+				<input type="range" class="element-gain" id="demo-gain" aria-label="Sample audio gain" min="0" max="5" step="0.05" value="1" />
+				<input type="number" class="element-gain-num" id="gain-value" aria-label="Gain multiplier" value="1" min="0" max="5" step="0.05">
+			</label>
+			<label class="pan-control">
+				<span>Pan</span>
+				<input type="range" class="element-pan" id="demo-pan" aria-label="Sample audio stereo balance" min="-1" max="1" step="0.05" value="0" />
+				<input type="number" class="element-pan-num" id="pan-value" aria-label="Stereo balance value" value="0" min="-1" max="1" step="0.05">
+			</label>
+
+			<div class="equalizer-section collapsed">
+				<div class="equalizer-header">
+					<span class="equalizer-title">Equalizer</span>
+					<div class="preset-buttons">
+						<button class="preset-btn" data-preset="flat" title="Flat">Flat</button>
+						<button class="preset-btn" data-preset="rock" title="Rock">Rock</button>
+						<button class="preset-btn" data-preset="pop" title="Pop">Pop</button>
+						<button class="preset-btn" data-preset="jazz" title="Jazz">Jazz</button>
+						<button class="preset-btn" data-preset="classical" title="Classical">Classical</button>
+						<button class="preset-btn" data-preset="bassBoost" title="Bass Boost">Bass+</button>
+						<button class="preset-btn" data-preset="vocal" title="Vocal">Vocal</button>
+						<button class="preset-btn" data-preset="dance" title="Dance">Dance</button>
+					</div>
+					<button class="equalizer-toggle" title="Toggle Equalizer"></button>
+				</div>
+				<div class="equalizer-controls">
+					<label class="eq-band">
+						<span class="band-label">Bass</span>
+						<span class="band-freq">250 Hz</span>
+						<input type="range" class="element-eq-bass" data-band="0" aria-label="Bass in decibels" min="-20" max="20" step="1" value="0" orient="vertical" />
+						<span class="band-value">0dB</span>
+					</label>
+					<label class="eq-band">
+						<span class="band-label">Low Mid</span>
+						<span class="band-freq">500 Hz</span>
+						<input type="range" class="element-eq-lowmid" data-band="1" aria-label="Low mids in decibels" min="-20" max="20" step="1" value="0" orient="vertical" />
+						<span class="band-value">0dB</span>
+					</label>
+					<label class="eq-band">
+						<span class="band-label">Mid</span>
+						<span class="band-freq">2 kHz</span>
+						<input type="range" class="element-eq-mid" data-band="2" aria-label="Mids in decibels" min="-20" max="20" step="1" value="0" orient="vertical" />
+						<span class="band-value">0dB</span>
+					</label>
+					<label class="eq-band">
+						<span class="band-label">High Mid</span>
+						<span class="band-freq">6 kHz</span>
+						<input type="range" class="element-eq-highmid" data-band="3" aria-label="High mids in decibels" min="-20" max="20" step="1" value="0" orient="vertical" />
+						<span class="band-value">0dB</span>
+					</label>
+					<label class="eq-band">
+						<span class="band-label">Treble</span>
+						<span class="band-freq">8 kHz</span>
+						<input type="range" class="element-eq-treble" data-band="4" aria-label="Treble in decibels" min="-20" max="20" step="1" value="0" orient="vertical" />
+						<span class="band-value">0dB</span>
+					</label>
+				</div>
+			</div>
+			<div class="checkboxes">
+				<label>
+					<span>Mono</span>
+					<input type="checkbox" class="element-mono" id="demo-mono" />
+				</label>
+				<label>
+					<span>Flip L/R</span>
+					<input type="checkbox" class="element-flip" id="demo-flip" />
+				</label>
+			</div>
+	</div></div>
+		<footer class="site-footer">
+			<div class="site-footer-main">
+				<span class="site-hostname">This demo</span>
+				<div class="site-footer-actions">
+					<label class="site-profile-toggle">
+						<input type="checkbox" class="remember-site" id="demo-remember" aria-label="Remember settings for this demo" />
+						<span class="site-profile-label">Remember</span>
+					</label>
+					<div class="more-menu-wrap">
+						<button type="button" class="more-menu-button" title="More actions" aria-label="More actions"  aria-expanded="false">⋯</button>
+						<div class="more-menu" role="group" hidden>
+							<div class="menu-main">
+								<button type="button" class="menu-profiles"   aria-expanded="false">
+									<span>Profiles</span>
+									<span class="menu-profiles-meta"><span class="active-profile-name">Default</span><span class="menu-arrow" aria-hidden="true">›</span></span>
+								</button>
+							</div>
+							<div class="profile-flyout" role="group" aria-label="Profiles" hidden>
+								<div class="profile-menu-header">
+									<button type="button" class="menu-back-main" aria-label="Back to site menu">‹ Back</button>
+									<span>Profiles</span>
+								</div>
+								<div class="profile-default" role="group" aria-label="Default profile"></div>
+								<div class="profile-list-shell">
+									<div id="profile-list" class="profile-list" role="group" aria-label="Saved demo profiles"></div>
+									<span class="profile-scroll-hint" hidden>Scroll for more</span>
+								</div>
+								<div class="menu-separator" role="separator"></div>
+								<button type="button" class="menu-new-profile" >Save current…</button>
+								<button type="button" class="menu-manage-profiles" >Manage profiles</button>
+								<form id="profile-form" class="profile-name-form" hidden>
+									<div class="profile-form-header">Save profile</div>
+									<label class="profile-name-label" for="profile-name">Name</label>
+									<input id="profile-name" type="text" class="profile-name-input" maxlength="32" placeholder="e.g. Movies" autocomplete="off">
+									<span class="profile-form-hint">Saved locally on your device. No account needed.</span>
+									<span class="profile-form-status" aria-live="polite"></span>
+									<div class="profile-form-actions">
+										<button type="button" class="profile-cancel-button">Cancel</button>
+										<button type="submit" class="profile-save-button" id="save-profile">Save</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<span class="site-profile-status" aria-live="polite"></span>
+		</footer>
+	</div></fieldset>
+</div></section><div class="demo-player">
+  <button type="button" class="sample-play" id="sample-play" aria-pressed="false" disabled><span class="play-symbol" aria-hidden="true">▶</span><span class="play-label">Play sample</span><span class="sample-signal" aria-hidden="true"><i></i><i></i><i></i></span></button>
+  <p class="demo-status" id="demo-status" role="status">Try the controls. Headphones help with balance.</p>
+  <noscript><p class="demo-status">Enable JavaScript to use the audio demo.</p></noscript>
+</div></div>
+        </div>
+        <figcaption>Interactive demo. Changes affect this sample only.</figcaption>
+      </figure>
+    </section>
+    <section class="features wrap" id="features" aria-labelledby="features-title">
+      <div class="section-heading"><p class="eyebrow">Everyday listening</p><h2 id="features-title">Small adjustments.<br>A more comfortable listen.</h2></div>
+      <div class="feature-list">
+        <article><span class="feature-number" aria-hidden="true">01</span><div><h3>Bring quiet videos up to volume.</h3><p>Increase or reduce the sound in your tab, with up to 5x gain on supported audio and video.</p></div></article>
+        <article><span class="feature-number" aria-hidden="true">02</span><div><h3>Keep the settings you like.</h3><p>Turn on Remember to restore your settings when you return to a site. Save named profiles for different ways you like to listen.</p></div></article>
+        <article><span class="feature-number" aria-hidden="true">03</span><div><h3>Go a little further when you need to.</h3><p>Open the 5-band equalizer to adjust the tone. Change stereo balance, switch to mono, or swap the left and right channels.</p></div></article>
+      </div>
+    </section>
+    <section class="remember-band" aria-labelledby="remember-title"><div class="wrap remember-content"><p class="eyebrow">Make yourself at home</p><h2 id="remember-title">Your settings,<br>ready next time.</h2><p>Find the sound you like, then turn on Remember. Your preferences are saved for that site, so you can pick up where you left off.</p><p class="quiet-note">Saved locally on your device. No account needed.</p></div></section>
+    <section class="questions wrap" id="questions" aria-labelledby="questions-title"><div class="section-heading"><p class="eyebrow">A few useful details</p><h2 id="questions-title">Before you install.</h2></div><div class="question-list">
+      <details><summary>Does it work on every website?</summary><p>Sound Adjuster works with standard HTML audio and video players. Protected media and browser security restrictions can limit the available controls. The popup explains when an adjustment isn't available.</p></details>
+      <details><summary>What happens when I close the popup?</summary><p>Your settings stay active in the current tab and apply to media added later on the same page. Turn on Remember if you'd like to restore those settings when you return to the site.</p></details>
+      <details><summary>Does it make all videos equally loud?</summary><p>No. You choose the volume and equalizer settings yourself. Remember restores those choices; it doesn't automatically match the loudness of different recordings.</p></details>
+      <details><summary>Why does it need access to websites?</summary><p>It needs to find audio and video elements on pages and apply your sound settings. Audio processing happens locally in your browser. The extension doesn't upload your audio or settings and contains no analytics or tracking.</p></details>
+      <details><summary>Where are my settings saved?</summary><p>Profiles and site preferences are stored locally in Firefox extension storage. They aren't synced between devices. Site profiles are not read or saved in private windows or on non-HTTP(S) pages.</p></details>
+      <details><summary>Where can I get help?</summary><p>Email <a href="mailto:tropicaddons@proton.me">tropicaddons@proton.me</a> or <a href="https://github.com/tropicaddons/sound-adjuster/issues">open an issue on GitHub</a>. Include your Firefox version and the website where the problem occurs.</p></details>
+    </div></section>
+    <section class="closing wrap" aria-label="Install Sound Adjuster"><h2>Give it a listen.</h2><a class="button" href="https://addons.mozilla.org/en-US/firefox/addon/sound-adjuster/?utm_source=product_site&amp;utm_medium=website&amp;utm_campaign=firefox_launch&amp;utm_content=footer">Get Sound Adjuster for Firefox <span aria-hidden="true">↗</span></a></section>
+  </main>
+  <footer class="site-footer wrap"><a class="brand" href="./"><img src="assets/icon.svg" width="24" height="24" alt=""><span>Sound Adjuster</span></a><p>Made by tropic. Free and open source.</p><a class="privacy-link" href="privacy.html">Privacy</a><a href="mailto:tropicaddons@proton.me">Get in touch <span aria-hidden="true">↗</span></a></footer>
+</body>
+</html>
