@@ -50,3 +50,25 @@ body{font-family:var(--font);font-synthesis:none;font-optical-sizing:auto;-moz-o
   .language-picker svg{width:15px;height:15px}.hero h1{font-size:58px}.hero:lang(tr) h1{font-size:50px}
 }
 @media(max-width:370px){.hero h1{font-size:52px}.hero:lang(tr) h1{font-size:46px}.hero .button{font-size:12px;padding-inline:14px;gap:10px}}
+
+/* Short, readable instructions share the product site's typography and themes. */
+.guides-teaser{display:flex;align-items:center;justify-content:space-between;gap:36px;padding-block:55px;border-bottom:1px solid var(--line)}
+.guides-teaser h2{max-width:560px;font-size:32px;line-height:1.2;margin-top:14px}
+.guides-teaser>a{font-size:14px;flex-shrink:0}.guides-teaser a:hover,.guide-demo:hover{color:var(--accent)}
+.site-footer>.guides-link{font-size:12px;color:var(--muted)}
+.guides-page{max-width:800px;padding-block:44px 76px}
+.guides-page>.back-link{display:inline-block;margin-bottom:35px;color:var(--muted);font-size:14px}
+.guides-page h1{font-size:clamp(40px,5vw,66px);line-height:1.08;max-width:700px;margin-block:18px 26px}
+.guide-intro{font-size:19px;color:var(--muted);max-width:710px}
+.guide-byline{font-size:12px;color:var(--muted);margin-top:22px}
+.guide-contents{display:grid;gap:12px;border-block:1px solid var(--line);padding-block:25px;margin-block:32px 18px}
+.guide-contents p{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.guide-contents a{width:fit-content;font-size:15px}.guide-ui-note{color:var(--muted);font-size:13px;max-width:680px}
+.listening-guide{padding-block:42px;border-bottom:1px solid var(--line);scroll-margin-top:30px}
+.listening-guide h2,.guide-limits h2,.guide-support h2{font-size:clamp(27px,3vw,36px);letter-spacing:-.04em;line-height:1.2;margin-block:13px 20px}
+.guide-answer{font-size:18px}.listening-guide ol{padding-left:24px;margin-block:24px}.listening-guide li{padding-left:8px;margin-block:15px}.listening-guide li::marker{color:var(--accent);font-weight:600}
+.guide-note{border-left:2px solid var(--accent);padding-left:20px;color:var(--muted);font-size:15px;margin-bottom:24px}
+.guide-demo{display:inline-block;font-size:14px}.guide-limits{padding-top:32px}.guide-limits p{color:var(--muted)}
+.guide-support{padding-top:24px}.guide-support p{margin-top:20px;font-size:14px}
+@media(max-width:800px){.site-footer{flex-wrap:wrap}.guides-teaser>a{flex-shrink:1}}
+@media(max-width:580px){.guides-teaser{align-items:flex-start;flex-direction:column;padding-block:35px;gap:22px}.guides-teaser h2{font-size:29px}.guides-page{padding-block:30px 50px}.guide-intro{font-size:17px}.listening-guide{padding-block:30px}.guide-answer{font-size:17px}.guides-page h1{overflow-wrap:break-word}}
