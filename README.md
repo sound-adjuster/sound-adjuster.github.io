@@ -2,7 +2,7 @@
 
 Product website and interactive audio demo for [Sound Adjuster for Firefox](https://addons.mozilla.org/firefox/addon/sound-adjuster/).
 
-Website: https://tropicaddons.github.io/sound-adjuster-website/
+Website: https://sound-adjuster.github.io/
 
 ## Editing
 
@@ -11,6 +11,8 @@ This is a static website with no build step. `index.html` contains the home page
 Styles and scripts are served locally. The audio demo generates its sample in the browser and uses local storage for preferences and saved demo profiles.
 
 ## Publishing
+
+Website repository: https://github.com/sound-adjuster/sound-adjuster.github.io
 
 GitHub repository settings: **Pages → Deploy from a branch → main → /(root)**. Changes committed to `main` are published automatically. `.nojekyll` keeps this a plain static site.
 
