@@ -19,3 +19,11 @@ GitHub repository settings: **Pages → Deploy from a branch → main → /(root
 Keep `index.html` at the repository root and upload the contents of the website folder, including `assets`. Do not upload the ZIP archive itself. The original extension source is maintained separately at https://github.com/tropicaddons/sound-adjuster.
 
 Font and icon license notices are included in `assets`.
+
+## Search discovery
+
+`robots.txt` allows crawling and points to `sitemap.xml`. The sitemap lists the two canonical pages. Update each page's `lastmod` only when that page changes meaningfully. The home page includes WebSite structured data for the Sound Adjuster site name.
+
+To monitor indexing, add `https://sound-adjuster.github.io/` as a URL-prefix property in Google Search Console, verify ownership with the HTML tag or file provided by Google, and submit `sitemap.xml`. Keep the verification tag/file in future updates. These steps help discovery; they do not guarantee indexing or ranking.
+
+The language selector currently uses one URL. It does not create six independently indexable language pages.
