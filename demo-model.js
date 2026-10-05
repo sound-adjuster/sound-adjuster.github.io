@@ -7,12 +7,13 @@
   }
   function matrix(mono, flip) { return mono ? [0.5, 0.5, 0.5, 0.5] : flip ? [0, 1, 1, 0] : [1, 0, 0, 1]; }
   function readSaved(text) {
+    const empty = () => ({ remember: false, settings: normalize(), profiles: [] });
     try {
       const saved = JSON.parse(text);
-      if (!saved || saved.version !== 1) return { remember: false, settings: normalize(), profiles: [] };
+      if (!saved || saved.version !== 1) return empty();
       const profiles = Array.isArray(saved.profiles) ? saved.profiles.filter(p => p && typeof p.name === 'string' && p.name.trim()).slice(0, 12).map(p => ({ name: p.name.trim().slice(0, 32), settings: normalize(p.settings) })) : [];
       return { remember: saved.remember === true, settings: saved.remember === true ? normalize(saved.settings) : normalize(), profiles };
-    } catch { return { remember: false, settings: normalize(), profiles: [] }; }
+    } catch { return empty(); }
   }
   // Original, quiet eight-second stereo phrase, synthesized locally on demand.
   function makeSample(sampleRate) {

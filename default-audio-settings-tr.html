@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f4ef">
+  <title>Firefox’ta siteye özel ve varsayılan ses ayarları - Sound Adjuster</title>
+  <meta name="description" content="Sound Adjuster ile Firefox’ta varsayılan ses seviyesini belirle, her site için ayrı ses ayarları kaydet ve klavye kısayollarıyla sesi ayarla.">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Sound Adjuster">
+  <meta property="og:title" content="Firefox’ta siteye özel ve varsayılan ses ayarları - Sound Adjuster">
+  <meta property="og:description" content="Sound Adjuster ile Firefox’ta varsayılan ses seviyesini belirle, her site için ayrı ses ayarları kaydet ve klavye kısayollarıyla sesi ayarla.">
+  <link rel="canonical" href="https://sound-adjuster.github.io/default-audio-settings-tr.html">
+  <meta property="og:url" content="https://sound-adjuster.github.io/default-audio-settings-tr.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:image" content="https://sound-adjuster.github.io/assets/social-preview.png">
+  <meta name="twitter:image" content="https://sound-adjuster.github.io/assets/social-preview.png">
+  <meta name="twitter:title" content="Firefox’ta siteye özel ve varsayılan ses ayarları - Sound Adjuster">
+  <meta name="twitter:description" content="Sound Adjuster ile Firefox’ta varsayılan ses seviyesini belirle, her site için ayrı ses ayarları kaydet ve klavye kısayollarıyla sesi ayarla.">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <script src="theme.js"></script>
+  <link rel="stylesheet" href="styles.css?v=20261005-guide2">
+  <script src="locales.js?v=20261005-editorial1" defer></script>
+  <script src="article-language.js?v=20261005-guide2" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Firefox’ta varsayılan ses seviyesi ve siteye özel ayarlar",
+  "description": "Sound Adjuster ile Firefox’ta varsayılan ses seviyesini belirle, her site için ayrı ses ayarları kaydet ve klavye kısayollarıyla sesi ayarla.",
+  "mainEntityOfPage": "https://sound-adjuster.github.io/default-audio-settings-tr.html",
+  "image": "https://sound-adjuster.github.io/assets/social-preview.png",
+  "dateModified": "2026-10-05",
+  "author": {
+    "@type": "Person",
+    "name": "tropic"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Sound Adjuster"
+  },
+  "inLanguage": "tr"
+}
+</script>
+  <link rel="alternate" hreflang="en" href="https://sound-adjuster.github.io/default-audio-settings.html">
+  <link rel="alternate" hreflang="de" href="https://sound-adjuster.github.io/default-audio-settings-de.html">
+  <link rel="alternate" hreflang="ja" href="https://sound-adjuster.github.io/default-audio-settings-ja.html">
+  <link rel="alternate" hreflang="tr" href="https://sound-adjuster.github.io/default-audio-settings-tr.html">
+  <link rel="alternate" hreflang="es" href="https://sound-adjuster.github.io/default-audio-settings-es.html">
+  <link rel="alternate" hreflang="pt-PT" href="https://sound-adjuster.github.io/default-audio-settings-pt.html">
+  <link rel="alternate" hreflang="x-default" href="https://sound-adjuster.github.io/default-audio-settings.html">
+</head>
+<body>
+  <a class="skip" href="#main">İçeriğe geç</a>
+  <header class="site-header wrap">
+    <a class="brand" href="./" aria-label="Sound Adjuster ana sayfa"><img src="assets/icon.svg" width="32" height="32" alt=""><span>Sound Adjuster</span></a>
+    <div class="header-actions">
+      <nav aria-label="Ana gezinme"><a class="nav-how" href="./#features">Nasıl çalışır</a><a class="nav-questions" href="./#questions">Sorular</a><a class="source-link" href="https://github.com/tropicaddons/sound-adjuster" aria-label="GitHub’da kaynak kodu"><span class="github-mark" aria-hidden="true"></span><span class="source-label">Açık kaynak</span><span aria-hidden="true">↗</span></a></nav>
+      <label class="language-picker"><span class="visually-hidden">Dil</span><svg width="17" height="17" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><ellipse cx="12" cy="12" rx="4" ry="9"></ellipse><path d="M3 12h18"></path></svg><select id="site-language" aria-label="Dil"><option value="en" lang="en">English</option><option value="de" lang="de">Deutsch</option><option value="ja" lang="ja">日本語</option><option value="tr" lang="tr" selected>Türkçe</option><option value="es" lang="es">Español</option><option value="pt" lang="pt">Português</option></select></label>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Karanlık tema" aria-pressed="false" title="Temayı değiştir"><svg class="moon-icon" viewbox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.3 14A8.5 8.5 0 0 1 10 3.7 8.5 8.5 0 1 0 20.3 14Z"></path></svg><svg class="sun-icon" viewbox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.4 1.4m11.2 11.2L19 19M5 19l1.4-1.4M17.6 6.4 19 5"></path></svg></button>
+    </div>
+  </header>
+  <main id="main" class="wrap guides-page audio-guide-page">
+    <a class="back-link" href="guides.html">Tüm ses ayarı rehberleri</a>
+    <article>
+      <header><p class="eyebrow">Ses ayarların her seferinde hazır olsun</p><h1>Firefox’ta varsayılan ses seviyesi ve siteye özel ayarlar</h1><p class="guide-intro">Bir eğitim videosunun sesini yükseltmek, müzik dinlerken ise sesi kısmak isteyebilirsin. Sound Adjuster ile her site için ayrı ses ayarları kaydedebilir ya da desteklenen sitelerde kullanılacak ortak bir varsayılan ayar belirleyebilirsin.</p><p class="guide-byline">Yazan: tropic · Son güncelleme: 5 Ekim 2026 · Sound Adjuster 2.5.1 için hazırlanmıştır</p></header>
+      <nav class="guide-contents" aria-label="Bu rehberde"><p>Bu rehberde</p><a href="#choose-settings">Hangi ayarı kullanmalısın?</a><a href="#per-site-settings">Bir site için ses ayarlarını kaydet</a><a href="#global-defaults">Diğer siteler için varsayılan ses ayarlarını belirle</a><a href="#settings-priority">İki özellik de açıksa hangi ayar uygulanır?</a><a href="#keyboard-shortcuts">Klavye kısayollarıyla sesi ayarla</a><a href="#reset-and-limits">Sıfırlama, gizlilik ve desteklenmeyen içerikler</a></nav>
+      <p class="guide-ui-note">Eklentinin arayüzü İngilizce olduğu için aşağıdaki adımlarda düğme ve menü adlarını İngilizce bıraktık. Sitedeki demo yalnızca örnek sesi değiştirir; kurulu eklentinin ayarlarını değiştirmez.</p>
+      <section class="listening-guide" id="choose-settings" aria-labelledby="choose-title"><h2 id="choose-title">Hangi ayarı kullanmalısın?</h2><p>Bu ayarlar, Sound Adjuster’ın işlediği sesi değiştirir. Bilgisayarının ses düzeyini veya sitenin kendi oynatıcısındaki ses ayarını değiştirmez.</p>
+        <div class="guide-table-wrap"><table class="settings-comparison"><caption>Ses ayarlarını kaydetmenin iki yolu</caption><thead><tr><th scope="col">Ne yapmak istiyorsun?</th><th scope="col">Kullanacağın özellik</th><th scope="col">Siteyi tekrar açtığında</th></tr></thead><tbody><tr><th scope="row">Bir site için ayrı ses ayarları kullanmak</th><td translate="no" lang="en">Remember</td><td>O site için kaydettiğin ses düzeyi, sağ-sol dengesi, kanal ve ekolayzır ayarları yeniden uygulanır.</td></tr><tr><th scope="row">Diğer desteklenen sitelerde ortak bir varsayılan ayar kullanmak</th><td translate="no" lang="en">Default audio settings</td><td>Site için özel bir ayar kaydetmediysen, sayfayı yenilediğinde veya yeni bir sekmede açtığında varsayılan ayarların uygulanır.</td></tr></tbody></table></div>
+      </section>
+      <section class="listening-guide" id="per-site-settings" aria-labelledby="per-site-title"><h2 id="per-site-title">Remember: siteye özel ses ayarlarını kaydet</h2><p>Bir eğitim sitesinde ses hep düşük geliyorsa Gain değerini artırıp Remember seçeneğini açabilirsin. Müzik dinlediğin site için de ayrı bir ses seviyesi kaydedebilirsin. İki sitenin ayarları birbirini etkilemez.</p><ol><li>Siteyi açıp eklentinin desteklediği bir ses veya video içeriğini oynat. Ardından Firefox araç çubuğundaki Sound Adjuster simgesine tıkla.</li><li>Gain (ses düzeyi çarpanı), Pan (sağ-sol dengesi), Mono, Flip L/R (sağ ve sol kanalları değiştirme) ve Equalizer (ekolayzır) ayarlarını yap. Gain için 1× civarında başla; ses bozulursa değeri azalt.</li><li>Eklenti penceresinin altındaki Remember seçeneğini aç. Ayarların tekrar uygulandığını kontrol etmek için sayfayı yenile.</li><li>Aynı site için birden fazla ayar kaydetmek istersen ⋯ menüsünden Profiles → Save current… yolunu izle. Profiline bir ad ver; daha sonra kullanmak istediğinde bu profili seç.</li></ol><p class="guide-note">Remember açık olduğu sürece yaptığın değişiklikler kaydedilir. Bu ayarların sonraki ziyaretlerinde otomatik uygulanmasını istemiyorsan Remember’ı kapat. Açık sekmedeki ses ayarların değişmez. Oluşturduğun profilleri ise Manage profiles bölümünden ayrı ayrı silebilirsin.</p></section>
+      <section class="listening-guide" id="global-defaults" aria-labelledby="global-title"><h2 id="global-title">Default audio settings: diğer siteler için varsayılan ayarlar</h2><p>Desteklenen sitelerin aynı ses ayarlarıyla açılmasını istiyorsan varsayılan ayarları belirle. Farklı ayar kullanmak istediğin sitelerde Remember seçeneğini açarak siteye özel ayarları kaydedebilirsin.</p><ol><li>Sound Adjuster’daki ⋯ menüsünü açıp Settings and exceptions seçeneğine tıkla.</li><li>Default audio settings bölümündeki Enabled seçeneğini aç.</li><li>Gain ve Pan değerlerini, Equalizer hazır ayarını, Mono ve Flip L/R seçeneklerini belirle. Ardından Save defaults düğmesine tıkla.</li><li>Ayarların uygulanması için desteklenen bir sayfayı yenile veya yeni bir sekmede aç. Varsayılan ayarları kaydetmek, zaten açık olan sekmelerin sesini hemen değiştirmez.</li></ol><p class="guide-note">Varsayılan ayarları devre dışı bırakmak için Enabled seçeneğini kapatıp yeniden kaydet. Bundan sonra açtığın veya yenilediğin sayfalarda bu ayarlar uygulanmaz. Siteye özel kaydettiğin ayarlar silinmez.</p></section>
+      <section class="listening-guide" id="settings-priority" aria-labelledby="priority-title"><h2 id="priority-title">İki özellik de açıksa hangi ayar uygulanır?</h2><ol class="settings-priority"><li>Önce, o site için Remember ile kaydettiğin ayarlar uygulanır.</li><li>Siteye özel kaydedilmiş bir ayar yoksa ve varsayılan ayarlar açıksa onlar uygulanır.</li><li>İkisi de yoksa ses değiştirilmeden başlar: Gain 1×, sağ-sol dengesi ortada ve ekolayzır bantları sıfırdadır.</li></ol><div class="guide-example"><h3>Örnek: eğitim sitesi, müzik sitesi ve yeni bir site</h3><p>Varsayılan Gain değerini 1,25× olarak belirlediğini düşün. Eğitim sitesinde Remember ile 1,75×, müzik sitesinde ise 0,8× kaydetmiş ol. Bu siteleri tekrar açtığında eğitim sitesinde 1,75×, müzik sitesinde 0,8× uygulanır. Daha önce ayar kaydetmediğin, desteklenen başka bir site ise 1,25× ile açılır.</p><p>Bu değerler yalnızca örnektir. Remember, kaydettiğin ayarları yeniden uygular; farklı videoların veya müziklerin sesini otomatik olarak aynı seviyeye getirmez.</p></div></section>
+      <section class="listening-guide" id="keyboard-shortcuts" aria-labelledby="shortcuts-title"><h2 id="shortcuts-title">Eklenti penceresini açmadan sekmenin sesini ayarla</h2><p>Klavye kısayolları, o anda kullandığın sekmenin ses ayarlarını değiştirir. O site için Remember açıksa kısayolla yaptığın değişiklikler de kaydedilir.</p><ul class="guide-shortcuts"><li><span>Gain değerini 0,25× artır</span><kbd>Alt+↑</kbd></li><li><span>Gain değerini 0,25× azalt</span><kbd>Alt+↓</kbd></li><li><span>Ses ayarlarını sıfırla</span><kbd>Alt+Shift+0</kbd></li><li><span>Mono’yu aç/kapat</span><kbd>Alt+Shift+M</kbd></li></ul><p>Kısayolları değiştirmek için Settings and exceptions → Keyboard shortcuts → Edit shortcuts yolunu izle. Firefox’un eklenti kısayolları ekranı açılır. Bir kısayol çalışmıyorsa başka bir kısayolla çakışıp çakışmadığını buradan kontrol edebilirsin.</p></section>
+      <section class="listening-guide" id="reset-and-limits" aria-labelledby="reset-title"><h2 id="reset-title">Sıfırlama, gizlilik ve desteklenmeyen içerikler</h2><p>Reset düğmesi, açık sekmede varsayılan ayarlarını uygular. Varsayılan ayarlar kapalıysa sesi değiştirmeyen başlangıç ayarlarına döner. Remember açıksa sıfırlama sonrası oluşan ayarlar o site için de kaydedilir.</p><p>Ayarların yalnızca bu cihazda, Firefox’un eklenti depolama alanında saklanır; başka cihazlara eşitlenmez. Gizli pencerelerde siteye özel kayıtlı ayarlar ve varsayılan ayarlar uygulanmaz.</p><p>Sound Adjuster, standart HTML ses ve video oynatıcılarıyla çalışır. Korumalı içerikler, başka bir kaynaktan yüklenen medya veya tarayıcı kısıtlamaları nedeniyle bazı sesler işlenemeyebilir. Ayar kaydetmek bu kısıtlamaları kaldırmaz. Böyle bir durumda eklenti penceresindeki durum mesajına bakabilirsin.</p></section>
+      <section class="guide-support"><h2>Bir kez ayarla. İstediğinde değiştir.</h2><a class="button" href="https://addons.mozilla.org/en-US/firefox/addon/sound-adjuster/?utm_source=product_site&amp;utm_medium=website&amp;utm_campaign=firefox_launch&amp;utm_content=default_audio_guide">Firefox Add-ons üzerinden kur<span aria-hidden="true">↗</span></a><p><a href="./#demo">Etkileşimli demoyu dene</a> · <a href="guides.html">Tüm ses ayarı rehberleri</a></p></section>
+    </article>
+    <nav class="article-language-links" aria-label="Bu rehberi başka bir dilde oku"><p>Bu rehberi başka bir dilde oku</p><a href="default-audio-settings.html" lang="en" hreflang="en">English</a><a href="default-audio-settings-de.html" lang="de" hreflang="de">Deutsch</a><a href="default-audio-settings-ja.html" lang="ja" hreflang="ja">日本語</a><a href="default-audio-settings-tr.html" lang="tr" hreflang="tr">Türkçe</a><a href="default-audio-settings-es.html" lang="es" hreflang="es">Español</a><a href="default-audio-settings-pt.html" lang="pt-PT" hreflang="pt-PT">Português</a></nav>
+  </main>
+  <footer class="site-footer wrap"><a class="brand" href="./"><img src="assets/icon.svg" width="24" height="24" alt=""><span>Sound Adjuster</span></a><p>tropic tarafından geliştirildi. Ücretsiz ve açık kaynak.</p><a class="guides-link" href="guides.html">Ses ayarı rehberleri</a><a class="privacy-link" href="privacy.html">Gizlilik</a><a href="mailto:tropicaddons@proton.me">İletişime geç <span aria-hidden="true">↗</span></a></footer>
+</body>
+</html>

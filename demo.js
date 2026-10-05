@@ -10,6 +10,7 @@
   let profiles = saved.profiles;
   let remember = saved.remember;
   let context = null, graph = null, playing = false;
+  let levelTimer = null;
   const bands = [...document.querySelectorAll('[data-band]')];
   const panel = document.querySelector('.original-demo');
   const q = selector => panel.querySelector(selector);
@@ -20,14 +21,13 @@
   };
   const presetButtons = [...panel.querySelectorAll('.preset-btn')];
   let manageProfiles = false;
+  let profileErrorKey = '';
   const profileMenu = q('.more-menu'), flyout = q('.profile-flyout'), form = $('profile-form');
   let demoTheme = 'dark';
   try { if (localStorage.getItem('sound-adjuster.original-demo-theme') === 'light') demoTheme = 'light'; } catch {}
 
-  // Match the released extension: popup controls and messages stay in English.
-  // Only the website's sample player and its guidance follow the site language.
-  const t = (source, values = {}) => source.replace(/\{(\w+)\}/g, (match, name) => Object.hasOwn(values, name) ? String(values[name]) : match);
-  const siteText = (source, values) => window.SoundAdjusterI18n.t(source, values);
+  const t = (source, values) => window.SoundAdjusterI18n.t(source, values);
+  const siteText = t;
   let statusKey = 'Try the controls. Headphones help with balance.', statusValues = {};
   const status = (source, values = {}) => { statusKey = source; statusValues = values; $('demo-status').textContent = siteText(source, values); };
   function persist() {
@@ -42,6 +42,26 @@
     graph.filters.forEach((filter, i) => filter.gain.setTargetAtTime(settings.eq[i], when, 0.025));
     const values = model.matrix(settings.mono, settings.flip);
     graph.routes.forEach((node, i) => node.gain.setTargetAtTime(values[i], when, 0.025));
+  }
+  function monitorLevel() {
+    clearTimeout(levelTimer);
+    levelTimer = null;
+    let state = 'unavailable';
+    if (playing && graph && context.state === 'running') {
+      graph.analyser.getFloatTimeDomainData(graph.levelSamples);
+      let peak = 0;
+      for (const sample of graph.levelSamples) peak = Math.max(peak, Math.abs(sample));
+      // Match the extension's thresholds; measure the output after EQ and gain.
+      state = peak >= 0.98 ? 'clipping' : peak >= 0.8 ? 'high' : 'normal';
+      levelTimer = setTimeout(monitorLevel, 160);
+    }
+    const label = state === 'clipping' ? 'Clipping risk'
+      : state === 'high' ? 'Output level high'
+      : state === 'normal' ? 'Output level normal' : 'Output level unavailable';
+    const indicator = $('demo-level');
+    indicator.dataset.state = state;
+    indicator.setAttribute('aria-label', t(label));
+    indicator.title = t(label);
   }
   function render() {
     $('demo-gain').value = settings.gain;
@@ -65,7 +85,11 @@
   function update(change) { settings = model.normalize({ ...settings, ...change }); render(); renderProfiles(); if (remember) persist(); }
   function hideNameForm() {
     form.hidden = true; flyout.classList.remove('profile-form-open'); q('.menu-new-profile').hidden = false;
-    $('profile-name').value = ''; q('.profile-form-status').textContent = '';
+    $('profile-name').value = ''; setProfileError('');
+  }
+  function setProfileError(source) {
+    profileErrorKey = source;
+    q('.profile-form-status').textContent = t(source);
   }
   function setMenu(open, restoreFocus = false) {
     profileMenu.hidden = !open; q('.more-menu-button').setAttribute('aria-expanded', String(open));
@@ -116,9 +140,9 @@
   }
   function saveProfile() {
     const name = $('profile-name').value.trim().slice(0, 32);
-    if (!name) { q('.profile-form-status').textContent = t('Give your profile a name first.'); $('profile-name').focus(); return; }
+    if (!name) { setProfileError('Give your profile a name first.'); $('profile-name').focus(); return; }
     const match = profiles.findIndex(p => p.name.toLowerCase() === name.toLowerCase());
-    if (match < 0 && profiles.length >= 12) { q('.profile-form-status').textContent = t('This demo holds twelve profiles. Remove one to save another.'); return; }
+    if (match < 0 && profiles.length >= 12) { setProfileError('This demo holds twelve profiles. Remove one to save another.'); return; }
     const profile = { name, settings: model.normalize(settings) };
     if (match >= 0) profiles[match] = profile; else profiles.push(profile);
     const okay = persist(); renderProfiles(); hideNameForm();
@@ -136,6 +160,10 @@
     q('.equalizer-toggle').setAttribute('aria-label', t(open ? 'Close Equalizer' : 'Open Equalizer'));
     q('.equalizer-toggle').title = t(open ? 'Close Equalizer' : 'Open Equalizer');
   }
+  function resetAudio() {
+    update(model.normalize());
+    status('Original sound settings restored.');
+  }
   function createAudio() {
     const AudioContext = window.AudioContext || window.webkitAudioContext;
     if (!AudioContext) throw new Error('Audio unavailable');
@@ -145,14 +173,16 @@
     channels.forEach((channel, i) => buffer.copyToChannel(channel, i));
     const source = context.createBufferSource(); source.buffer = buffer; source.loop = true;
     const filters = [250, 500, 2000, 6000, 8000].map((frequency, i) => { const node = context.createBiquadFilter(); node.type = i === 0 ? 'lowshelf' : i === 4 ? 'highshelf' : 'peaking'; node.frequency.value = frequency; node.Q.value = 1; return node; });
-    const gain = context.createGain(), pan = context.createStereoPanner();
+    const gain = context.createGain(), pan = context.createStereoPanner(), analyser = context.createAnalyser();
+    analyser.fftSize = 256;
+    analyser.smoothingTimeConstant = 0.65;
     const splitter = context.createChannelSplitter(2), merger = context.createChannelMerger(2);
     const routes = Array.from({ length: 4 }, () => context.createGain());
     source.connect(filters[0]); filters.slice(1).forEach((filter, i) => filters[i].connect(filter));
-    filters[4].connect(gain); gain.connect(pan); pan.connect(splitter);
+    filters[4].connect(gain); gain.connect(analyser); analyser.connect(pan); pan.connect(splitter);
     routes.forEach((route, i) => { splitter.connect(route, Math.floor(i / 2), 0); route.connect(merger, 0, i % 2); });
     merger.connect(context.destination);
-    graph = { source, filters, gain, pan, routes };
+    graph = { source, filters, gain, pan, routes, analyser, levelSamples: new Float32Array(analyser.fftSize) };
     // Set the remembered values before the source can produce audio.
     gain.gain.value = settings.gain; pan.pan.value = settings.pan;
     filters.forEach((filter, i) => filter.gain.value = settings.eq[i]);
@@ -166,6 +196,7 @@
     document.querySelector('.play-label').textContent = siteText(value ? 'Pause sample' : 'Play sample');
     document.querySelector('.play-symbol').textContent = value ? 'Ⅱ' : '▶';
     document.querySelector('.demo').dataset.playing = String(value);
+    monitorLevel();
   }
   $('sample-play').addEventListener('click', async () => {
     $('sample-play').disabled = true;
@@ -183,10 +214,10 @@
   $('demo-mono').addEventListener('change', e => update({ mono: e.target.checked }));
   $('demo-flip').addEventListener('change', e => update({ flip: e.target.checked }));
   bands.forEach((input, i) => input.addEventListener('input', () => { const eq = [...settings.eq]; eq[i] = Number(input.value); update({ eq }); }));
-  $('demo-reset').addEventListener('click', () => { update(model.normalize()); if (!remember) status('Original sound settings restored.'); });
+  $('demo-reset').addEventListener('click', resetAudio);
   $('demo-remember').addEventListener('change', e => { remember = e.target.checked; if (persist()) status(remember ? 'These demo settings will be here when you return.' : 'Remember is off. Your current sound is unchanged.'); });
   form.addEventListener('submit', event => { event.preventDefault(); saveProfile(); });
-  $('profile-name').addEventListener('input', () => { q('.profile-form-status').textContent = ''; });
+  $('profile-name').addEventListener('input', () => setProfileError(''));
   for (const [id, setting] of [['gain-value', 'gain'], ['pan-value', 'pan']]) {
     $(id).addEventListener('input', event => { if (event.target.value !== '') update({ [setting]: Number(event.target.value) }); });
     $(id).addEventListener('change', event => { update({ [setting]: Number(event.target.value) }); event.target.value = setting === 'gain' ? settings.gain.toFixed(2) : String(settings.pan); });
@@ -232,7 +263,11 @@
   bands.forEach((input, i) => wheel(input.parentElement, () => settings.eq[i], value => { const eq = [...settings.eq]; eq[i] = value; update({ eq }); }, 1));
   document.addEventListener('visibilitychange', () => { if (document.hidden && context && playing) { context.suspend().catch(() => {}); setPlaying(false); status('Paused while the page is in the background.'); } });
   window.addEventListener('pagehide', () => { if (context && context.state !== 'closed') context.close().catch(() => {}); setPlaying(false); });
-  window.addEventListener('site-language-change', () => { setPlaying(playing); status(statusKey, statusValues); });
+  window.addEventListener('site-language-change', () => {
+    setPlaying(playing); status(statusKey, statusValues);
+    render(); renderProfiles(); renderDemoTheme(); renderEqualizer();
+    setProfileError(profileErrorKey);
+  });
   renderDemoTheme(); renderEqualizer();
   status(statusKey); setPlaying(false);
   render(); renderProfiles(); $('demo-controls').disabled = false; $('sample-play').disabled = false;

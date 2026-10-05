@@ -18,7 +18,7 @@
   const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
   while (walker.nextNode()) {
     const node = walker.currentNode, source = node.textContent.trim();
-    if (node.parentElement.closest('script, style, noscript, option, #demo-status, .play-label, output, #profile-list, [translate="no"]')) continue;
+    if (node.parentElement.closest('script, style, noscript, #demo-status, .play-label, output, #profile-list, [data-i18n-dynamic], [translate="no"]')) continue;
     if (translations.has(source)) texts.push({ node, source, before: node.textContent.match(/^\s*/)[0], after: node.textContent.match(/\s*$/)[0] });
   }
   document.querySelectorAll('[aria-label], [placeholder], [title], meta[content]').forEach(node => {
@@ -36,6 +36,9 @@
     texts.forEach(({ node, source, before, after }) => { node.textContent = before + t(source) + after; });
     attributes.forEach(({ node, attr, source }) => node.setAttribute(attr, t(source)));
     selector.value = language;
+    document.querySelectorAll('[data-audio-guide]').forEach(link => {
+      link.setAttribute('href', `default-audio-settings${language === 'en' ? '' : '-' + language}.html${link.dataset.audioGuide}`);
+    });
     const accent = document.querySelector('#hero-title .accent');
     if (accent) accent.textContent = language === 'ja' ? '。' : '.';
     window.dispatchEvent(new Event('site-language-change'));

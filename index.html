@@ -33,13 +33,13 @@
   <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
   <script src="theme.js"></script>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="original-demo.css">
-  <link rel="stylesheet" href="demo-integration.css">
-  <script src="locales.js" defer></script>
-  <script src="i18n.js" defer></script>
-  <script src="demo-model.js" defer></script>
-  <script src="demo.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20261005-guide2">
+  <link rel="stylesheet" href="original-demo.css?v=20261005-guide2">
+  <link rel="stylesheet" href="demo-integration.css?v=20261005-guide2">
+  <script src="locales.js?v=20261005-editorial1" defer></script>
+  <script src="i18n.js?v=20261005-guide2" defer></script>
+  <script src="demo-model.js?v=20261005-guide2" defer></script>
+  <script src="demo.js?v=20261005-guide2" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -62,29 +62,42 @@
       </div>
       <figure class="product-figure" id="demo">
         <div class="product-stage">
-          <div class="demo-experience"><section class="demo original-demo" lang="en" translate="no" aria-label="Interactive Sound Adjuster demo">
-  <button id="demo-theme-toggle" type="button" title="Switch theme" aria-label="Switch theme">☼</button>
-
-  <div id="elements-pane">
-    <header>
-      <h2 class="popup-title">Sound Adjuster</h2>
-    </header>
-	<fieldset id="demo-controls" class="original-controls" disabled><legend class="visually-hidden">Audio controls for the sample</legend><div class="control-card">
-		<div id="all-elements"><div>
-			<div class="header-row">
-				<span class="element-label">All media</span>
-				<button type="button" class="element-reset" id="demo-reset">Reset</button>
-			</div>
-			<label class="gain-control">
+          <div class="demo-experience"><section class="demo original-demo" aria-label="Interactive Sound Adjuster demo">
+  <div id="demo-popup-content">
+    <button id="demo-theme-toggle" type="button" title="Switch theme" aria-label="Switch theme">☼</button>
+    <div id="elements-pane">
+      <header><h2 class="popup-title">Sound Adjuster</h2></header>
+      <fieldset id="demo-controls" class="original-controls" disabled>
+        <legend class="visually-hidden">Audio controls for the sample</legend>
+        <div class="control-card"><div id="all-elements"><div>
+<label class="gain-control">
 				<span>Gain</span>
 				<input type="range" class="element-gain" id="demo-gain" aria-label="Sample audio gain" min="0" max="5" step="0.05" value="1" />
-				<input type="number" class="element-gain-num" id="gain-value" aria-label="Gain multiplier" value="1" min="0" max="5" step="0.05">
+				<div class="gain-value">
+					<input type="number" class="element-gain-num" id="gain-value" aria-label="Gain multiplier" value="1" min="0" max="5" step="0.05">
+					<span class="level-indicator" data-state="unavailable" id="demo-level" role="status" aria-label="Output level unavailable" title="Output level unavailable"></span>
+				</div>
 			</label>
 			<label class="pan-control">
 				<span>Pan</span>
 				<input type="range" class="element-pan" id="demo-pan" aria-label="Sample audio stereo balance" min="-1" max="1" step="0.05" value="0" />
 				<input type="number" class="element-pan-num" id="pan-value" aria-label="Stereo balance value" value="0" min="-1" max="1" step="0.05">
 			</label>
+			<div class="control-actions">
+				<div class="checkboxes">
+					<label>
+						<input type="checkbox" class="element-mono" id="demo-mono" />
+						<span class="switch-control" aria-hidden="true"></span>
+						<span>Mono</span>
+					</label>
+					<label>
+						<input type="checkbox" class="element-flip" id="demo-flip" />
+						<span class="switch-control" aria-hidden="true"></span>
+						<span>Flip L/R</span>
+					</label>
+				</div>
+				<button type="button" class="element-reset" id="demo-reset">Reset</button>
+			</div>
 
 			<div class="equalizer-section collapsed">
 				<div class="equalizer-header">
@@ -134,23 +147,14 @@
 					</label>
 				</div>
 			</div>
-			<div class="checkboxes">
-				<label>
-					<span>Mono</span>
-					<input type="checkbox" class="element-mono" id="demo-mono" />
-				</label>
-				<label>
-					<span>Flip L/R</span>
-					<input type="checkbox" class="element-flip" id="demo-flip" />
-				</label>
-			</div>
-	</div></div>
-		<footer class="site-footer">
+        </div></div>
+<footer class="site-footer">
 			<div class="site-footer-main">
 				<span class="site-hostname">This demo</span>
 				<div class="site-footer-actions">
 					<label class="site-profile-toggle">
 						<input type="checkbox" class="remember-site" id="demo-remember" aria-label="Remember settings for this demo" />
+						<span class="switch-control" aria-hidden="true"></span>
 						<span class="site-profile-label">Remember</span>
 					</label>
 					<div class="more-menu-wrap">
@@ -193,8 +197,11 @@
 			</div>
 			<span class="site-profile-status" aria-live="polite"></span>
 		</footer>
-	</div></fieldset>
-</div></section><div class="demo-player">
+        </div>
+      </fieldset>
+    </div>
+  </div>
+</section><div class="demo-player">
   <button type="button" class="sample-play" id="sample-play" aria-pressed="false" disabled><span class="play-symbol" aria-hidden="true">▶</span><span class="play-label">Play sample</span><span class="sample-signal" aria-hidden="true"><i></i><i></i><i></i></span></button>
   <p class="demo-status" id="demo-status" role="status">Try the controls. Headphones help with balance.</p>
   <noscript><p class="demo-status">Enable JavaScript to use the audio demo.</p></noscript>
@@ -207,11 +214,12 @@
       <div class="section-heading"><p class="eyebrow">Everyday listening</p><h2 id="features-title">Small adjustments.<br>A more comfortable listen.</h2></div>
       <div class="feature-list">
         <article><span class="feature-number" aria-hidden="true">01</span><div><h3>Bring quiet videos up to volume.</h3><p>Increase or reduce the sound in your tab, with up to 5x gain on supported audio and video.</p></div></article>
-        <article><span class="feature-number" aria-hidden="true">02</span><div><h3>Keep the settings you like.</h3><p>Turn on Remember to restore your settings when you return to a site. Save named profiles for different ways you like to listen.</p></div></article>
+        <article><span class="feature-number" aria-hidden="true">02</span><div><h3>Keep the settings you like.</h3><p>Remember one website, or choose a default setup for other supported tabs. Keep named profiles for different ways you listen.</p></div></article>
         <article><span class="feature-number" aria-hidden="true">03</span><div><h3>Go a little further when you need to.</h3><p>Open the 5-band equalizer to adjust the tone. Change stereo balance, switch to mono, or swap the left and right channels.</p></div></article>
+        <article><span class="feature-number" aria-hidden="true">04</span><div><h3>Adjust the active tab from your keyboard.</h3><p>Use shortcuts to change gain, reset audio or switch mono without opening the extension popup.</p><a class="feature-guide-link" href="default-audio-settings.html#keyboard-shortcuts" data-audio-guide="#keyboard-shortcuts">See the keyboard shortcuts</a></div></article>
       </div>
     </section>
-    <section class="remember-band" aria-labelledby="remember-title"><div class="wrap remember-content"><p class="eyebrow">Make yourself at home</p><h2 id="remember-title">Your settings,<br>ready next time.</h2><p>Find the sound you like, then turn on Remember. Your preferences are saved for that site, so you can pick up where you left off.</p><p class="quiet-note">Saved locally on your device. No account needed.</p></div></section>
+    <section class="remember-band" aria-labelledby="remember-title"><div class="wrap remember-content"><p class="eyebrow">Make yourself at home</p><h2 id="remember-title">Your settings,<br>ready next time.</h2><div class="saved-sound-summary"><p>Save a different sound for each website, or set a starting sound for your other tabs. A remembered site takes priority over your defaults.</p><div class="saved-sound-examples"><div><h3>For one website</h3><p>Remember a course site at 1.75×.</p></div><div><h3>For your other tabs</h3><p>Start at 1.25× with Default audio settings.</p></div></div><p class="example-caption">Example settings. Choose the levels that suit your recordings.</p><a href="default-audio-settings.html" data-audio-guide="">Set up per-site sound and global defaults<span aria-hidden="true"> ↗</span></a><p class="quiet-note">Saved locally on your device. No account needed.</p></div></div></section>
     <section class="guides-teaser wrap" aria-labelledby="guides-heading"><div><p class="eyebrow">Listening guides</p><h2 id="guides-heading">Quiet video? Settings gone? Start here.</h2></div><a href="guides.html">Read the listening guides<span aria-hidden="true"> ↗</span></a></section>
     <section class="questions wrap" id="questions" aria-labelledby="questions-title"><div class="section-heading"><p class="eyebrow">A few useful details</p><h2 id="questions-title">Before you install.</h2></div><div class="question-list">
       <details><summary>Does it work on every website?</summary><p>Sound Adjuster works with standard HTML audio and video players. Protected media and browser security restrictions can limit the available controls. The popup explains when an adjustment isn't available.</p></details>
