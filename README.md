@@ -28,6 +28,8 @@ Font and icon license notices are included in `assets`.
 
 `robots.txt` allows crawling and points to `sitemap.xml`. The sitemap lists the home page, guide hub, privacy notice and all six article URLs. Update each page's `lastmod` only when that page changes meaningfully. The home page includes WebSite structured data; each article has its own canonical URL, reciprocal language alternatives and Article structured data matching the visible text. Guides remain readable without JavaScript.
 
+`sitemap.txt` is an additional Google-supported plain text sitemap with the same URLs, one per line. Both sitemap addresses are listed in `robots.txt`. After editing `sitemap.xml`, run `python scripts/build-text-sitemap.py` to keep the text version aligned. It provides another submission URL for diagnosing fetch problems; it does not guarantee that Google will fetch or index the pages. Submit `sitemap.txt` in Search Console's Sitemaps report to check that request separately.
+
 To monitor indexing, add `https://sound-adjuster.github.io/` as a URL-prefix property in Google Search Console, verify ownership with the HTML tag or file provided by Google, and submit `sitemap.xml`. Keep the verification tag/file in future updates. These steps help discovery; they do not guarantee indexing or ranking.
 
 The home page, guide hub and privacy notice still use one URL each with client-side language selection. The new defaults/per-site article has six independently accessible language URLs. It does not automatically redirect visitors based on browser language.
