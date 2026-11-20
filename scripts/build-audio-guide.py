@@ -51,6 +51,10 @@ class ArticleTranslation(HTMLParser):
         if tag == 'html': attrs['lang'] = LANG_TAGS.get(self.lang, self.lang)
         if tag == 'link' and attrs.get('rel') == 'canonical': attrs['href'] = self.url
         if tag == 'meta' and attrs.get('property') == 'og:url': attrs['content'] = self.url
+        if tag == 'a' and attrs.get('href', '').endswith('&utm_content=default_audio_guide_en'):
+            attrs['href'] = attrs['href'].replace(
+                'utm_content=default_audio_guide_en', f'utm_content=default_audio_guide_{self.lang}'
+            )
         if tag == 'option':
             attrs.pop('selected', None)
             if attrs.get('value') == self.lang: attrs['selected'] = None

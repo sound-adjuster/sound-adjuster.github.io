@@ -4,34 +4,34 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f6f4ef">
-  <title>Firefoxで使う共通の音量設定とサイト別の音声設定 - Sound Adjuster</title>
-  <meta name="description" content="Sound AdjusterでFirefoxの共通の音量設定を決め、サイトごとに異なる音声設定を保存できます。キーボードショートカットで、いま使っているタブの音を調整することもできます。">
+  <title>Firefoxで標準音量とサイト別の音声設定を使う | Sound Adjuster</title>
+  <meta name="description" content="Sound Adjuster で Firefox のタブの標準音量を設定し、音量、バランス、EQ をサイトごとに保存できます。">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Sound Adjuster">
-  <meta property="og:title" content="Firefoxで使う共通の音量設定とサイト別の音声設定 - Sound Adjuster">
-  <meta property="og:description" content="Sound AdjusterでFirefoxの共通の音量設定を決め、サイトごとに異なる音声設定を保存できます。キーボードショートカットで、いま使っているタブの音を調整することもできます。">
+  <meta property="og:title" content="Firefoxで標準音量とサイト別の音声設定を使う | Sound Adjuster">
+  <meta property="og:description" content="Sound Adjuster で Firefox のタブの標準音量を設定し、音量、バランス、EQ をサイトごとに保存できます。">
   <link rel="canonical" href="https://sound-adjuster.github.io/default-audio-settings-ja.html">
   <meta property="og:url" content="https://sound-adjuster.github.io/default-audio-settings-ja.html">
   <meta name="twitter:card" content="summary_large_image">
   <meta property="og:image" content="https://sound-adjuster.github.io/assets/social-preview.png">
   <meta name="twitter:image" content="https://sound-adjuster.github.io/assets/social-preview.png">
-  <meta name="twitter:title" content="Firefoxで使う共通の音量設定とサイト別の音声設定 - Sound Adjuster">
-  <meta name="twitter:description" content="Sound AdjusterでFirefoxの共通の音量設定を決め、サイトごとに異なる音声設定を保存できます。キーボードショートカットで、いま使っているタブの音を調整することもできます。">
+  <meta name="twitter:title" content="Firefoxで標準音量とサイト別の音声設定を使う | Sound Adjuster">
+  <meta name="twitter:description" content="Sound Adjuster で Firefox のタブの標準音量を設定し、音量、バランス、EQ をサイトごとに保存できます。">
   <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
   <script src="theme.js"></script>
   <link rel="stylesheet" href="styles.css?v=20261005-guide2">
-  <script src="locales.js?v=20261005-editorial1" defer></script>
+  <script src="locales.js?v=20261120-copy" defer></script>
   <script src="article-language.js?v=20261005-guide2" defer></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Firefoxの音量設定を保存する：サイト別の設定と共通設定",
-  "description": "Sound AdjusterでFirefoxの共通の音量設定を決め、サイトごとに異なる音声設定を保存できます。キーボードショートカットで、いま使っているタブの音を調整することもできます。",
+  "headline": "Firefoxの標準音量を設定し、サイトごとに音声設定を保存する",
+  "description": "Sound Adjuster で Firefox のタブの標準音量を設定し、音量、バランス、EQ をサイトごとに保存できます。",
   "mainEntityOfPage": "https://sound-adjuster.github.io/default-audio-settings-ja.html",
   "image": "https://sound-adjuster.github.io/assets/social-preview.png",
-  "dateModified": "2026-10-05",
+  "dateModified": "2026-11-20",
   "author": {
     "@type": "Person",
     "name": "tropic"
@@ -64,18 +64,20 @@
   <main id="main" class="wrap guides-page audio-guide-page">
     <a class="back-link" href="guides.html">音の調整ガイド一覧</a>
     <article>
-      <header><p class="eyebrow">音の設定を保存して、調整の手間を減らす</p><h1>Firefoxの音量設定を保存する：サイト別の設定と共通設定</h1><p class="guide-intro">講座の音が小さいときは音量を上げ、音楽サイトでは少し下げたいこともあります。Sound Adjusterなら、サイトごとに異なる音の設定を保存できます。対応するタブを、共通の設定で始めることもできます。</p><p class="guide-byline">tropic 著 · 2026年10月5日更新 · Sound Adjuster 2.5.1に基づく</p></header>
-      <nav class="guide-contents" aria-label="このガイドの内容"><p>このガイドの内容</p><a href="#choose-settings">自分の聴き方には、どちらが合う？</a><a href="#per-site-settings">サイトごとに音の設定を保存する</a><a href="#global-defaults">ほかのサイトに使う共通設定を決める</a><a href="#settings-priority">両方を有効にするとどうなる？</a><a href="#keyboard-shortcuts">キーボードショートカットで音を変える</a><a href="#reset-and-limits">リセット、プライバシー、再生上の制限</a></nav>
+      <header><p class="eyebrow">音声設定ガイド</p><h1>Firefoxの標準音量を設定し、サイトごとに音声設定を保存する</h1><p class="guide-intro">音の小さいオンライン講座では音量を上げたい一方、音楽サイトはそのままで十分なこともあります。Firefoxのタブに共通設定を使い、必要なサイトには別の設定を保存できます。</p><p class="guide-byline">tropic 著 · 2026年11月20日更新 · Sound Adjuster 2.6.0 対応</p>
+        <a class="button" href="https://addons.mozilla.org/en-US/firefox/addon/sound-adjuster/?utm_source=product_site&amp;utm_medium=website&amp;utm_campaign=firefox_launch&amp;utm_content=default_audio_guide_ja">Firefox Add-onsからインストール<span aria-hidden="true">↗</span></a>
+      </header>
+      <nav class="guide-contents" aria-label="このガイドの内容"><p>このガイドの内容</p><a href="#choose-settings">共通設定とサイト別設定はいつ使う？</a><a href="#per-site-settings">サイトごとに音の設定を保存する</a><a href="#global-defaults">ほかのサイトに使う共通設定を決める</a><a href="#settings-priority">両方を有効にするとどうなる？</a><a href="#keyboard-shortcuts">キーボードショートカットで音を変える</a><a href="#reset-and-limits">リセット、プライバシー、再生上の制限</a></nav>
       <p class="guide-ui-note">以下の手順では、Firefox拡張機能の画面に表示される英語の項目名を使います。このサイトのデモは拡張機能とは別です。デモで変更できるのはサンプル音声だけで、拡張機能の設定には反映されません。</p>
-      <section class="listening-guide" id="choose-settings" aria-labelledby="choose-title"><h2 id="choose-title">自分の聴き方には、どちらが合う？</h2><p>ここでの設定は、Sound Adjusterが処理する音声に適用されます。端末の音量設定や、サイトのプレーヤーにある音量コントロールは変わりません。</p>
-        <div class="guide-table-wrap"><table class="settings-comparison"><caption>音の設定を保存する2つの方法</caption><thead><tr><th scope="col">やりたいこと</th><th scope="col">使う機能</th><th scope="col">次に開いたとき</th></tr></thead><tbody><tr><th scope="row">特定のサイトに専用の音声設定を使う</th><td translate="no" lang="en">Remember</td><td>そのサイト用に保存した音量の増幅率、左右のバランス、チャンネル、イコライザーの設定が復元されます。</td></tr><tr><th scope="row">ほかの対応サイトで同じ設定から始める</th><td translate="no" lang="en">Default audio settings</td><td>サイト用の保存設定がない場合、新しいタブや再読み込みしたタブでは共通設定が使われます。</td></tr></tbody></table></div>
+      <section class="listening-guide" id="choose-settings" aria-labelledby="choose-title"><h2 id="choose-title">共通設定とサイト別設定はいつ使う？</h2><p>ここでの設定は、Sound Adjusterが処理する音声に適用されます。端末の音量設定や、サイトのプレーヤーにある音量コントロールは変わりません。</p>
+        <div class="guide-table-wrap"><table class="settings-comparison"><caption>サイト別設定と共通設定の比較</caption><thead><tr><th scope="col">やりたいこと</th><th scope="col">使う機能</th><th scope="col">次に開いたとき</th></tr></thead><tbody><tr><th scope="row">特定のサイトに専用の音声設定を使う</th><td translate="no" lang="en">Remember</td><td>そのサイト用に保存した音量の増幅率、左右のバランス、チャンネル、イコライザーの設定が復元されます。</td></tr><tr><th scope="row">ほかの対応サイトでも同じ共通設定を使う</th><td translate="no" lang="en">Default audio settings</td><td>サイト用の保存設定がない場合、新しいタブや再読み込みしたタブでは共通設定が使われます。</td></tr></tbody></table></div>
       </section>
       <section class="listening-guide" id="per-site-settings" aria-labelledby="per-site-title"><h2 id="per-site-title">Remember：サイトごとに音の設定を保存</h2><p>講座サイトの音がいつも小さい場合は、そのサイトで「Gain」を上げ、「Remember」をオンにします。講座サイトの設定を変えずに、音楽サイトには別の音量を保存できます。</p><ol><li>サイトを開き、対応する音声や動画を再生します。続いてFirefoxのツールバーからSound Adjusterを開きます。</li><li>必要に応じて「Gain」「Pan」「Mono」「Flip L/R」「Equalizer」を調整します。増幅率は1×付近から始め、音が歪む場合は「Gain」を下げてください。</li><li>ポップアップ下部の「Remember」をオンにします。ページを再読み込みして、選んだ設定が復元されるか確認します。</li><li>同じサイトに別の設定も保存するには、⋯メニューから「Profiles」→「Save current…」を選んで名前を付けます。必要なときに、そのプロファイルを選んで切り替えられます。</li></ol><p class="guide-note">「Remember」がオンの間は変更が保存されます。オフにすると、そのサイトの現在の設定は自動で復元されなくなります。開いているタブの音は変わりません。名前付きプロファイルは「Manage profiles」から個別に削除できます。</p></section>
-      <section class="listening-guide" id="global-defaults" aria-labelledby="global-title"><h2 id="global-title">Default audio settings：ほかのタブに使う共通設定</h2><p>対応するサイトで同じ設定から始めたい場合は、共通設定を使います。特定のサイトに別の設定を保存すれば、そのサイトだけ異なる設定を使えます。</p><ol><li>Sound Adjusterの⋯メニューを開き、「Settings and exceptions」を選びます。</li><li>「Default audio settings」で「Enabled」をオンにします。</li><li>「Gain」と「Pan」を調整し、「Equalizer」のプリセットを選びます。「Mono」と「Flip L/R」も設定したら、「Save defaults」をクリックします。</li><li>共通設定を使うには、対応するページを再読み込みするか、新しいタブを開きます。設定を保存しただけでは、すでに開いているタブの音はすぐには変わりません。</li></ol><p class="guide-note">共通設定を使わないようにするには、「Enabled」をオフにして、もう一度保存します。これ以降にページを開いたり再読み込みしたりするときの設定が変わります。サイト別に保存した設定は消えません。</p></section>
+      <section class="listening-guide" id="global-defaults" aria-labelledby="global-title"><h2 id="global-title">ほかのタブで使う共通設定を決める</h2><p>共通設定は対応サイトに適用されます。特定のサイトで別の設定を使うには、そのサイトを開いて音を調整し、Rememberをオンにします。</p><ol><li>Sound Adjusterの⋯メニューを開き、「Settings and exceptions」を選びます。</li><li>「Default audio settings」で「Enabled」をオンにします。</li><li>「Gain」と「Pan」を調整し、「Equalizer」のプリセットを選びます。「Mono」と「Flip L/R」も設定したら、「Save defaults」をクリックします。</li><li>共通設定を使うには、対応するページを再読み込みするか、新しいタブを開きます。設定を保存しただけでは、すでに開いているタブの音はすぐには変わりません。</li></ol><p class="guide-note">共通設定を使わない場合は、Enabledをオフにします。変更は自動で保存されます。Rememberで保存した設定は、次にそのサイトを開いたときも適用されます。</p></section>
       <section class="listening-guide" id="settings-priority" aria-labelledby="priority-title"><h2 id="priority-title">両方を有効にするとどうなる？</h2><ol class="settings-priority"><li>現在のサイト用に保存した設定が優先されます。</li><li>そのサイト用の保存設定がなければ、有効になっている共通設定が適用されます。</li><li>どちらもない場合、Sound Adjusterは音を変えない設定で始まります。増幅率は1×、左右のバランスは中央、イコライザーは各帯域0 dBです。</li></ol><div class="guide-example"><h3>例：講座サイト、音楽サイト、新しいタブ</h3><p>たとえば、共通設定の増幅率を1.25×、講座サイト用を1.75×、音楽サイト用を0.8×で保存します。講座サイトに戻ると1.75×、音楽サイトに戻ると0.8×に復元されます。新しい対応サイトでは1.25×から始まります。</p><p>これらの数値は設定例で、推奨音量ではありません。「Remember」は選んだ設定を復元する機能です。異なる音源の音量を自動でそろえる機能ではありません。</p></div></section>
       <section class="listening-guide" id="keyboard-shortcuts" aria-labelledby="shortcuts-title"><h2 id="shortcuts-title">ポップアップを開かずに、いま使っているタブの音を調整</h2><p>キーボードショートカットでも、ポップアップと同じ音声調整機能を使えます。対象は、いま使っているタブです。そのサイトの「Remember」がオンなら、ショートカットでの変更も保存されます。</p><ul class="guide-shortcuts"><li><span>音量の増幅率を0.25×上げる</span><kbd>Alt+↑</kbd></li><li><span>音量の増幅率を0.25×下げる</span><kbd>Alt+↓</kbd></li><li><span>音声設定をリセット</span><kbd>Alt+Shift+0</kbd></li><li><span>モノラルを切り替える</span><kbd>Alt+Shift+M</kbd></li></ul><p>キーの組み合わせを変えるには、「Settings and exceptions」→「Keyboard shortcuts」→「Edit shortcuts」を開きます。Firefoxの拡張機能ショートカット管理画面が開きます。ほかの操作とキーが重なる場合は、この画面で割り当てを確認してください。</p></section>
       <section class="listening-guide" id="reset-and-limits" aria-labelledby="reset-title"><h2 id="reset-title">リセット、プライバシー、再生上の制限</h2><p>「Reset」を押すと、現在のタブに有効な共通設定が適用されます。共通設定が無効なら、ニュートラルな設定に戻ります。「Remember」がオンの場合、リセット後の設定もそのサイト用に保存されます。</p><p>設定はこの端末のFirefox拡張機能用ストレージに保存され、ほかの端末とは同期されません。プライベートウィンドウでは、サイト別の保存設定も共通設定も復元されません。</p><p>Sound Adjusterは標準のHTML音声・動画に対応しています。保護されたコンテンツ、別の配信元のメディア、ブラウザーの制限によって、音声を処理できない場合があります。設定を保存しても、これらの制限は回避できません。ポップアップに表示される対応状況のメッセージを確認してください。</p></section>
-      <section class="guide-support"><h2>一度設定して、必要なときだけ調整。</h2><a class="button" href="https://addons.mozilla.org/en-US/firefox/addon/sound-adjuster/?utm_source=product_site&amp;utm_medium=website&amp;utm_campaign=firefox_launch&amp;utm_content=default_audio_guide">Firefox Add-onsからインストール<span aria-hidden="true">↗</span></a><p><a href="./#demo">デモを試す</a> · <a href="guides.html">音の調整ガイド一覧</a></p></section>
+      <section class="guide-support"><h2>操作を試す・ほかのガイドを読む</h2><p><a href="./#demo">デモを試す</a> · <a href="guides.html">音の調整ガイド一覧</a></p></section>
     </article>
     <nav class="article-language-links" aria-label="このガイドを別の言語で読む"><p>このガイドを別の言語で読む</p><a href="default-audio-settings.html" lang="en" hreflang="en">English</a><a href="default-audio-settings-de.html" lang="de" hreflang="de">Deutsch</a><a href="default-audio-settings-ja.html" lang="ja" hreflang="ja">日本語</a><a href="default-audio-settings-tr.html" lang="tr" hreflang="tr">Türkçe</a><a href="default-audio-settings-es.html" lang="es" hreflang="es">Español</a><a href="default-audio-settings-pt.html" lang="pt-PT" hreflang="pt-PT">Português</a></nav>
   </main>

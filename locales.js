@@ -377,12 +377,12 @@ window.SoundAdjusterLocales = [
     "ao seu gosto"
   ],
   [
-    "Boost quiet audio up to 5× on supported Firefox players, fine-tune it with a 5-band equalizer, and save settings for each site.",
-    "Verstärke leisen Ton in unterstützten Firefox-Playern bis auf das Fünffache, passe den Klang mit einem 5-Band-Equalizer an und speichere deine Einstellungen pro Website.",
-    "Firefox の対応プレーヤーで小さな音を最大5倍に増幅し、5バンドイコライザーで音質を調整。設定はサイトごとに保存できます。",
-    "Firefox’ta desteklenen oynatıcılarda sesi 5 kata kadar yükselt, 5 bantlı ekolayzırla ince ayar yap ve ayarlarını siteye göre kaydet.",
-    "Amplifica el sonido hasta 5 veces en reproductores compatibles de Firefox, ajusta el tono con un ecualizador de 5 bandas y guarda tus ajustes por sitio.",
-    "Aumente o som até 5 vezes nos leitores compatíveis do Firefox, ajuste-o com um equalizador de 5 bandas e guarde as definições por site."
+    "Boost audio up to 5× in Firefox, fine-tune it with a 5-band equalizer, and save your settings for each site.",
+    "Verstärke den Ton in Firefox bis aufs Fünffache, stimme ihn mit einem 5-Band-Equalizer ab und speichere deine Einstellungen pro Website.",
+    "Firefoxで音量を最大5倍に増幅し、5バンドイコライザーで音質を調整。設定はサイトごとに保存できます。",
+    "Firefox’ta sesi 5 kata kadar yükselt, 5 bantlı ekolayzırla ince ayar yap ve ayarlarını her site için ayrı kaydet.",
+    "Amplifica el sonido en Firefox hasta 5 veces, ajústalo con un ecualizador de 5 bandas y guarda tus ajustes para cada sitio.",
+    "Aumente o volume no Firefox até cinco vezes, ajuste o som com um equalizador de 5 bandas e guarde as suas definições por site."
   ],
   [
     "Get Sound Adjuster for Firefox",
@@ -705,28 +705,28 @@ window.SoundAdjusterLocales = [
     "Uma experiência mais confortável."
   ],
   [
-    "Bring quiet videos up to volume.",
-    "Mach leise Videos lauter.",
-    "音の小さい動画を、聴きやすい音量に。",
-    "Sesi kısık videoların sesini aç.",
-    "Sube el volumen de los vídeos que se oyen bajo.",
-    "Aumente o volume de vídeos com som baixo."
+    "Turn up quiet videos",
+    "Leise Videos lauter machen",
+    "音の小さい動画を聞きやすく",
+    "Kısık videoların sesini aç",
+    "Sube el volumen de los vídeos que se oyen bajo",
+    "Aumente o volume dos vídeos com som baixo"
   ],
   [
-    "Increase or reduce the sound in your tab, with up to 5x gain on supported audio and video.",
-    "Erhöhe oder senke die Lautstärke im Tab. Unterstützte Audio- und Videoinhalte lassen sich bis zu 5-fach verstärken.",
-    "タブ内の音量を上げ下げできます。対応する音声や動画は、ゲインを最大5倍まで調整できます。",
-    "Sekmendeki sesi artır veya azalt. Desteklenen ses ve videolarda kazancı 5 kata kadar yükselt.",
-    "Aumenta o reduce el volumen de la pestaña, con una ganancia de hasta 5 veces en audio y vídeo compatibles.",
-    "Aumente ou reduza o som do separador, com ganho até 5 vezes em áudio e vídeo compatíveis."
+    "Raise or lower the volume in the current tab. Boost supported audio and video up to 5×.",
+    "Mach den aktuellen Tab lauter oder leiser. Unterstützte Audio- und Videoinhalte lassen sich bis aufs Fünffache verstärken.",
+    "表示中のタブの音量を調整できます。対応する音声や動画は最大5倍に増幅できます。",
+    "Geçerli sekmenin sesini artır veya azalt. Desteklenen ses ve videoları 5 kata kadar yükselt.",
+    "Sube o baja el volumen de la pestaña activa. Amplifica el audio y el vídeo compatibles hasta 5 veces.",
+    "Aumente ou reduza o volume do separador ativo. Amplifique até cinco vezes o áudio e o vídeo compatíveis."
   ],
   [
-    "Keep the settings you like.",
-    "Behalte deinen Lieblingsklang.",
-    "気に入った設定を保存。",
-    "Sevdiğin ayarları sakla.",
-    "Conserva los ajustes que te gustan.",
-    "Guarde as definições de que gosta."
+    "Save settings for each site",
+    "Einstellungen pro Website speichern",
+    "設定をサイトごとに保存",
+    "Her site için ayrı ayar kaydet",
+    "Guarda los ajustes por sitio",
+    "Guarde as definições por site"
   ],
   [
     "Turn on Remember to restore your settings when you return to a site. Save named profiles for different ways you like to listen.",
@@ -737,12 +737,12 @@ window.SoundAdjusterLocales = [
     "Ative Remember para recuperar as definições quando voltar a um site. Guarde perfis com nome para diferentes formas de ouvir."
   ],
   [
-    "Go a little further when you need to.",
-    "Mehr Möglichkeiten, wenn du sie brauchst.",
-    "必要なときは、もう少し細かく。",
-    "İhtiyacın olduğunda biraz daha ayarla.",
-    "Ajusta un poco más cuando lo necesites.",
-    "Vá um pouco mais longe quando precisar."
+    "Shape the sound",
+    "Klang und Stereo einstellen",
+    "音質や左右のバランスを調整",
+    "Ses tonunu ve dengeyi ayarla",
+    "Ajusta el tono y el balance",
+    "Ajuste o tom e o balanço"
   ],
   [
     "Open the 5-band equalizer to adjust the tone. Change stereo balance, switch to mono, or swap the left and right channels.",
@@ -1313,12 +1313,12 @@ window.SoundAdjusterLocales = [
     "Se nos contactar"
   ],
   [
-    "If you email us, we receive your email address and the information you choose to send. Issues posted on the public GitHub repository are public, so please leave out private information.",
-    "Wenn du uns eine E-Mail schickst, erhalten wir deine E-Mail-Adresse und die Informationen, die du uns sendest. Beiträge im öffentlichen GitHub-Issue-Tracker sind öffentlich. Bitte teile dort keine privaten Informationen.",
-    "メールでお問い合わせいただくと、メールアドレスと送信された内容を受け取ります。公開GitHubリポジトリのIssueへの投稿は公開されるため、非公開の情報は記載しないでください。",
-    "Bize e-posta gönderirsen e-posta adresini ve paylaşmayı seçtiğin bilgileri alırız. Herkese açık GitHub deposuna yazılan sorun bildirimleri de herkese açıktır; bu nedenle özel bilgilerini ekleme.",
-    "Si nos escribes por correo, recibimos tu dirección y la información que decidas enviar. Las incidencias publicadas en el repositorio público de GitHub son públicas; evita incluir información privada.",
-    "Se nos enviar um email, recebemos o seu endereço e as informações que decidir enviar. Os problemas publicados no repositório público do GitHub são públicos; evite incluir informações privadas."
+    "If you email us, we receive your address and the information you send. Anyone can read issues you post in our GitHub repository. Leave out private information.",
+    "Wenn du uns eine E-Mail schickst, erhalten wir deine Adresse und die Angaben, die du uns sendest. Issues, die du in unserem GitHub-Repository erstellst, sind öffentlich. Lass private Informationen weg.",
+    "メールでお問い合わせいただくと、メールアドレスと送信内容を受け取ります。GitHubリポジトリに投稿したIssueは誰でも読めます。個人情報や非公開の情報は書かないでください。",
+    "Bize e-posta gönderirsen adresini ve gönderdiğin bilgileri alırız. GitHub depomuzda açtığın sorun kayıtlarını herkes okuyabilir. Özel bilgilerini paylaşma.",
+    "Si nos escribes por correo, recibimos tu dirección y la información que envíes. Cualquiera puede leer las incidencias que publiques en nuestro repositorio de GitHub. Evita incluir información privada.",
+    "Se nos enviar um e-mail, recebemos o seu endereço e a informação que enviar. Qualquer pessoa pode ler as ocorrências que publicar no nosso repositório do GitHub. Evite incluir informações privadas."
   ],
   [
     "Privacy questions:",
@@ -1361,12 +1361,12 @@ window.SoundAdjusterLocales = [
     "Aprende a amplificar áudio baixo no Firefox, guardar definições por site e ajustar o equilíbrio esquerdo/direito com o Sound Adjuster."
   ],
   [
-    "A few steps to better listening.",
-    "Mit wenigen Schritten zum passenden Klang.",
-    "音を整える、かんたんな手順。",
-    "İstediğin ses için birkaç adım.",
-    "Unos pasos para ajustar el sonido.",
-    "Alguns passos para ajustar o som."
+    "Adjust audio in Firefox",
+    "Audio in Firefox einstellen",
+    "Firefoxの音声を調整する",
+    "Firefox’ta sesi ayarlama",
+    "Ajusta el sonido en Firefox",
+    "Ajuste o som no Firefox"
   ],
   [
     "Sound Adjuster is a free, open-source volume booster and 5-band equalizer for Firefox. Use these guides with the extension, or try its controls in the website demo.",
@@ -1449,10 +1449,10 @@ window.SoundAdjusterLocales = [
     "Para alterar o tom, abre Equalizer e ajusta as cinco bandas ou escolhe uma predefinição. Gain altera o nível geral; o equalizador altera o equilíbrio entre gamas de frequências."
   ],
   [
-    "How do I remember sound settings for a website?",
-    "Wie speichere ich Klangeinstellungen für eine Website?",
-    "サイトごとに音の設定を保存するには？",
-    "Bir site için ses ayarlarını nasıl kaydederim?",
+    "How do I save audio settings for a website?",
+    "Wie speichere ich Audioeinstellungen für eine Website?",
+    "サイトごとに音声設定を保存するには？",
+    "Bir sitenin ses ayarlarını nasıl kaydederim?",
     "¿Cómo guardo los ajustes de sonido de un sitio?",
     "Como guardo as definições de som de um site?"
   ],
@@ -1609,12 +1609,12 @@ window.SoundAdjusterLocales = [
     "Neste guia"
   ],
   [
-    "Quiet video? Settings gone? Start here.",
-    "Leises Video? Einstellungen weg? Hier geht’s los.",
-    "音が小さい？設定が消えた？まずはこちら。",
-    "Ses düşük mü? Ayarlar kayıp mı? Buradan başla.",
-    "¿Audio bajo? ¿Ajustes perdidos? Empieza aquí.",
-    "Áudio baixo? Definições perdidas? Começa aqui."
+    "Get more out of Firefox audio",
+    "Audio in Firefox gezielt einstellen",
+    "Firefoxの音を使いやすく",
+    "Firefox’ta sesi nasıl ayarlarsın?",
+    "Saca más partido al sonido de Firefox",
+    "Tire mais partido do som no Firefox"
   ],
   [
     "Read the listening guides",
@@ -1849,28 +1849,28 @@ window.SoundAdjusterLocales = [
     "Ative o JavaScript para utilizar a demonstração de áudio."
   ],
   [
-    "Remember one website, or choose a default setup for other supported tabs. Keep named profiles for different ways you listen.",
-    "Speichere die Klangeinstellungen für einzelne Websites oder lege Standardwerte für andere Websites fest, auf denen Sound Adjuster funktioniert. Mit benannten Profilen kannst du mehrere Einstellungen griffbereit halten.",
-    "サイトごとに音の設定を保存したり、ほかの対応するタブに共通の設定を使ったりできます。聴き方に合わせて名前付きプロファイルを作り、設定を使い分けることもできます。",
-    "Her site için ayrı ses ayarları kaydet veya diğer desteklenen sitelerde kullanılacak varsayılan ayarları belirle. Farklı ayarlar arasında geçiş yapmak için kendi profillerini oluştur.",
-    "Guarda los ajustes de sonido de un sitio o elige una configuración predeterminada para otras pestañas compatibles. Crea perfiles con nombre para tus distintas formas de escuchar.",
-    "Guarde as definições de som de um site ou escolha uma configuração predefinida para outros separadores compatíveis. Crie perfis com nome para diferentes formas de ouvir."
+    "Turn on Remember to reuse your settings the next time you visit a site. Save named profiles to switch between setups on the same site.",
+    "Aktiviere Remember, damit deine Einstellungen beim nächsten Besuch wieder gelten. Mit benannten Profilen wechselst du zwischen Einstellungen für dieselbe Website.",
+    "Rememberをオンにすると、次回そのサイトを開いたときに設定が復元されます。同じサイトでも名前付きプロファイルで設定を切り替えられます。",
+    "Bir siteye döndüğünde aynı ayarları kullanmak için Remember seçeneğini aç. Aynı sitede farklı ayarlar arasında geçmek için profilleri adlandırıp kaydet.",
+    "Activa Remember para recuperar tus ajustes cuando vuelvas a un sitio. Guarda perfiles con nombre para cambiar de configuración en ese mismo sitio.",
+    "Ative Remember para recuperar as suas definições quando voltar a um site. Guarde perfis com nome para alternar entre configurações no mesmo site."
   ],
   [
-    "Adjust the active tab from your keyboard.",
-    "Passe den Klang im aktiven Tab mit der Tastatur an.",
-    "キーボードで、いま使っているタブの音を調整。",
-    "Sekmenin sesini klavyeden ayarla.",
-    "Ajusta el sonido de la pestaña activa con el teclado.",
-    "Ajuste o som do separador ativo com o teclado."
+    "Control tab audio with shortcuts",
+    "Tab-Audio per Tastatur steuern",
+    "ショートカットでタブの音を操作",
+    "Sekme sesini kısayollarla yönet",
+    "Controla el sonido con atajos",
+    "Controle o som com atalhos"
   ],
   [
-    "Use shortcuts to change gain, reset audio or switch mono without opening the extension popup.",
-    "Ändere die Verstärkung, setze die Audioeinstellungen zurück oder schalte Mono ein und aus – ohne das Popup der Erweiterung zu öffnen.",
-    "拡張機能のポップアップを開かずに、ショートカットで音量の増幅率を変えたり、音声設定をリセットしたり、モノラルを切り替えたりできます。",
-    "Eklenti penceresini açmadan sesi artırıp azalt, ses ayarlarını sıfırla veya mono ses özelliğini açıp kapat.",
-    "Usa los atajos para ajustar la amplificación, restablecer los ajustes de audio o activar y desactivar el modo mono sin abrir la ventana de la extensión.",
-    "Utilize os atalhos para ajustar a amplificação, repor as definições de áudio ou ativar e desativar o modo mono sem abrir a janela da extensão."
+    "Change gain, reset your settings, or turn mono on or off without opening the extension popup.",
+    "Ändere die Verstärkung, setze die Einstellungen zurück oder schalte Mono ein oder aus, ohne das Popup der Erweiterung zu öffnen.",
+    "拡張機能のポップアップを開かずに、増幅率を変えたり、設定をリセットしたり、モノラルを切り替えたりできます。",
+    "Eklenti penceresini açmadan sesi artırıp azalt, ayarları sıfırla veya mono sesi açıp kapat.",
+    "Ajusta la amplificación, restablece los ajustes o activa y desactiva el modo mono sin abrir el panel de la extensión.",
+    "Ajuste a amplificação, reponha as definições ou ative e desative o modo mono sem abrir o painel da extensão."
   ],
   [
     "See the keyboard shortcuts",
@@ -1881,12 +1881,12 @@ window.SoundAdjusterLocales = [
     "Ver os atalhos de teclado"
   ],
   [
-    "Save a different sound for each website, or set a starting sound for your other tabs. A remembered site takes priority over your defaults.",
-    "Speichere für jede Website eigene Klangeinstellungen oder lege fest, mit welchen Einstellungen deine anderen Tabs starten. Gespeicherte Einstellungen für eine Website haben Vorrang vor den Standardwerten.",
-    "サイトごとに異なる音の設定を保存したり、ほかのタブに使う共通設定を決めたりできます。サイト用に保存した設定がある場合は、共通設定より優先されます。",
-    "Her site için ayrı ses ayarları kaydet veya diğer sitelerde kullanılacak varsayılan ayarları belirle. Bir siteye özel ayar kaydettiysen o sitede varsayılanlar yerine bu ayarlar uygulanır.",
-    "Guarda una configuración de sonido distinta para cada sitio o define los ajustes iniciales de las demás pestañas. Los ajustes guardados para un sitio tienen prioridad sobre los predeterminados.",
-    "Guarde definições de som diferentes para cada site ou defina as configurações iniciais dos outros separadores. As definições guardadas para um site têm prioridade sobre as predefinidas."
+    "Set a default for supported tabs and save different settings for individual sites. A site’s saved settings take priority.",
+    "Lege Standardwerte für unterstützte Tabs fest und speichere abweichende Einstellungen für einzelne Websites. Gespeicherte Einstellungen der Website haben Vorrang.",
+    "対応するタブに共通設定を使い、サイトごとに別の設定も保存できます。サイト別の保存済み設定が優先されます。",
+    "Desteklenen sekmeler için varsayılan ayarları belirle, istediğin siteler için ayrı ayarlar kaydet. Siteye özel kayıtlı ayarlar önceliklidir.",
+    "Define ajustes predeterminados para las pestañas compatibles y guarda ajustes distintos para sitios concretos. Los ajustes guardados del sitio tienen prioridad.",
+    "Defina valores predefinidos para separadores compatíveis e guarde definições diferentes por site. As definições guardadas para o site têm prioridade."
   ],
   [
     "For one website",
@@ -1897,12 +1897,12 @@ window.SoundAdjusterLocales = [
     "Para um site"
   ],
   [
-    "Remember a course site at 1.75×.",
-    "Speichere für eine Website mit Onlinekursen eine Verstärkung von 1,75×.",
-    "講座サイト用に、音量の増幅率を1.75×で保存。",
-    "Bir eğitim sitesinin ses düzeyini 1,75× olarak kaydet.",
-    "Guarda una amplificación de 1,75× para un sitio de cursos.",
-    "Guarde uma amplificação de 1,75× para um site de cursos."
+    "Save 1.75× gain for a course site.",
+    "Speichere 1,75-fache Verstärkung für eine Kurswebsite.",
+    "講座サイトの増幅率を1.75倍で保存。",
+    "Bir kurs sitesi için 1,75× ses yükseltme ayarını kaydet.",
+    "Guarda una amplificación de 1,75× para el sitio de un curso.",
+    "Guarde uma amplificação de 1,75× para o site de um curso."
   ],
   [
     "For your other tabs",
@@ -1929,12 +1929,12 @@ window.SoundAdjusterLocales = [
     "Estas definições são apenas exemplos. Escolha os níveis adequados ao áudio que estiver a ouvir."
   ],
   [
-    "Set up per-site sound and global defaults",
-    "Klangeinstellungen pro Website und globale Standardwerte einrichten",
-    "サイト別の音声設定と共通設定を使う",
-    "Siteye özel ve varsayılan ses ayarlarını nasıl yapacağını öğren",
-    "Configura el sonido por sitio y los ajustes predeterminados globales",
-    "Configurar o som por site e as definições globais predefinidas"
+    "Set default and per-site audio",
+    "Standardwerte und Einstellungen pro Website einrichten",
+    "共通設定とサイト別設定を使う",
+    "Varsayılan ve siteye özel ses ayarlarını yap",
+    "Configura el sonido predeterminado y por sitio",
+    "Configure o som predefinido e por site"
   ],
   [
     "By tropic · Updated 5 October 2026 · Based on Sound Adjuster 2.5.1",
@@ -1953,12 +1953,12 @@ window.SoundAdjusterLocales = [
     "Volume predefinido no Firefox: para um site ou para todos"
   ],
   [
-    "Want the same starting sound on other sites?",
-    "Möchtest du auf anderen Websites mit denselben Klangeinstellungen starten?",
-    "ほかのサイトでも同じ音声設定で始めたいときは？",
-    "Diğer siteler de aynı ses ayarlarıyla açılsın mı?",
-    "¿Quieres empezar con los mismos ajustes de sonido en otros sitios?",
-    "Quer começar com as mesmas definições de som noutros sites?"
+    "Want the same default settings on other sites?",
+    "Möchtest du dieselben Standardwerte auf anderen Websites nutzen?",
+    "ほかのサイトにも同じ共通設定を使うには？",
+    "Diğer sitelerde de aynı varsayılan ayarları mı istiyorsun?",
+    "¿Quieres usar los mismos ajustes predeterminados en otros sitios?",
+    "Quer usar as mesmas definições predefinidas noutros sites?"
   ],
   [
     "Enable Default audio settings in the extension’s Settings page. They apply after a reload or in a new tab, unless that website has its own remembered sound.",
@@ -1993,36 +1993,36 @@ window.SoundAdjusterLocales = [
     "Todos os guias de som"
   ],
   [
-    "Saved sound, less adjusting",
-    "Klangeinstellungen speichern, weniger nachregeln",
-    "音の設定を保存して、調整の手間を減らす",
-    "Ses ayarların her seferinde hazır olsun",
-    "Tus ajustes guardados, menos cambios",
-    "Definições guardadas, menos ajustes"
+    "Audio settings guide",
+    "Anleitung zu Audioeinstellungen",
+    "音声設定ガイド",
+    "Ses ayarları rehberi",
+    "Guía de ajustes de sonido",
+    "Guia de definições de som"
   ],
   [
-    "Set a default volume in Firefox, or remember it per site.",
-    "Lege eine Standardlautstärke in Firefox fest oder speichere die Lautstärke für einzelne Websites.",
-    "Firefoxの音量設定を保存する：サイト別の設定と共通設定",
-    "Firefox’ta varsayılan ses seviyesi ve siteye özel ayarlar",
-    "Define un volumen predeterminado en Firefox o guarda uno distinto para cada sitio.",
-    "Defina um volume predefinido no Firefox ou guarde um volume diferente para cada site."
+    "Set a default volume in Firefox and save settings per site",
+    "Standardlautstärke in Firefox festlegen und Einstellungen pro Website speichern",
+    "Firefoxの標準音量を設定し、サイトごとに音声設定を保存する",
+    "Firefox’ta varsayılan sesi belirle ve siteye özel ayarları kaydet",
+    "Configura el volumen predeterminado de Firefox y guarda ajustes por sitio",
+    "Defina o volume predefinido no Firefox e guarde definições por site"
   ],
   [
-    "A quiet course needs more gain. A music site may need less. Sound Adjuster can remember a different setup for each website, or start supported tabs with one default setup.",
-    "Wenn ein Onlinekurs leise klingt, kannst du die Lautstärke erhöhen. Auf einer Musik-Website möchtest du sie vielleicht eher senken. Sound Adjuster kann für jede Website eigene Einstellungen speichern oder unterstützte Tabs mit gemeinsamen Standardwerten starten.",
-    "講座の音が小さいときは音量を上げ、音楽サイトでは少し下げたいこともあります。Sound Adjusterなら、サイトごとに異なる音の設定を保存できます。対応するタブを、共通の設定で始めることもできます。",
-    "Bir eğitim videosunun sesini yükseltmek, müzik dinlerken ise sesi kısmak isteyebilirsin. Sound Adjuster ile her site için ayrı ses ayarları kaydedebilir ya da desteklenen sitelerde kullanılacak ortak bir varsayılan ayar belirleyebilirsin.",
-    "Si un curso se oye muy bajo, puedes subir el volumen. En un sitio de música, quizá prefieras bajarlo. Sound Adjuster permite guardar ajustes diferentes para cada sitio o aplicar una configuración común a las pestañas compatibles.",
-    "Se o som de um curso estiver baixo, pode aumentá-lo. Num site de música, talvez prefira baixar o volume. O Sound Adjuster permite guardar definições diferentes para cada site ou aplicar uma configuração comum aos separadores compatíveis."
+    "A quiet online course might need a boost, while a music site might already be loud enough. Set a default for Firefox tabs and save separate audio settings for sites that need them.",
+    "Ein leiser Onlinekurs braucht vielleicht mehr Lautstärke, während die Musikwebsite schon laut genug ist. Lege Standardwerte für Firefox-Tabs fest und speichere für einzelne Websites eigene Einstellungen.",
+    "音の小さいオンライン講座では音量を上げたい一方、音楽サイトはそのままで十分なこともあります。Firefoxのタブに共通設定を使い、必要なサイトには別の設定を保存できます。",
+    "Sesi kısık bir çevrimiçi kursta sesi yükseltmek isteyebilirsin. Bir müzik sitesinin sesi ise zaten yeterli olabilir. Firefox sekmeleri için varsayılan ayarları belirle, ihtiyaç duyduğun sitelere ayrı ayarlar kaydet.",
+    "Puede que necesites subir el volumen de un curso en línea, mientras que un sitio de música ya se oye bien. Define ajustes predeterminados para las pestañas de Firefox y guarda otros ajustes para los sitios que los necesiten.",
+    "Um curso online com som baixo pode precisar de mais volume, enquanto um site de música pode já se ouvir bem. Defina valores predefinidos para os separadores do Firefox e guarde definições diferentes nos sites em que precisar."
   ],
   [
-    "Which option fits your listening?",
-    "Welche Einstellung passt zu dir?",
-    "自分の聴き方には、どちらが合う？",
-    "Hangi ayarı kullanmalısın?",
-    "¿Qué opción se adapta a tu forma de escuchar?",
-    "Qual é a opção mais adequada à sua forma de ouvir?"
+    "When should I use defaults or site settings?",
+    "Wann nutze ich Standardwerte oder Website-Einstellungen?",
+    "共通設定とサイト別設定はいつ使う？",
+    "Varsayılan ve siteye özel ayarlar ne zaman kullanılır?",
+    "¿Cuándo conviene usar ajustes predeterminados o por sitio?",
+    "Quando devo usar definições predefinidas ou por site?"
   ],
   [
     "Remember sound for one website",
@@ -2081,12 +2081,12 @@ window.SoundAdjusterLocales = [
     "Estas definições alteram o áudio processado pelo Sound Adjuster. Não mudam o volume do dispositivo nem o controlo de volume do leitor do site."
   ],
   [
-    "Two ways to keep your sound ready",
-    "Zwei Möglichkeiten, deine Klangeinstellungen zu speichern",
-    "音の設定を保存する2つの方法",
-    "Ses ayarlarını kaydetmenin iki yolu",
-    "Dos formas de guardar tus ajustes de sonido",
-    "Duas formas de guardar as definições de som"
+    "Site settings and defaults at a glance",
+    "Website-Einstellungen und Standardwerte im Überblick",
+    "サイト別設定と共通設定の比較",
+    "Siteye özel ve varsayılan ayarların karşılaştırması",
+    "Ajustes por sitio y predeterminados de un vistazo",
+    "Definições por site e predefinidas num relance"
   ],
   [
     "What you want",
@@ -2129,12 +2129,12 @@ window.SoundAdjusterLocales = [
     "Ao voltar ao site, são recuperadas as suas definições de amplificação, balanço, canais e equalizador."
   ],
   [
-    "One starting setup for other supported sites",
-    "Gemeinsame Standardwerte für andere unterstützte Websites",
-    "ほかの対応サイトで同じ設定から始める",
-    "Diğer desteklenen sitelerde ortak bir varsayılan ayar kullanmak",
-    "Una configuración inicial común para otros sitios compatibles",
-    "Uma configuração inicial comum para outros sites compatíveis"
+    "The same defaults on other supported sites",
+    "Dieselben Standardwerte auf anderen unterstützten Websites",
+    "ほかの対応サイトでも同じ共通設定を使う",
+    "Diğer desteklenen sitelerde aynı varsayılan ayarları kullanmak",
+    "Los mismos ajustes predeterminados en otros sitios compatibles",
+    "As mesmas predefinições noutros sites compatíveis"
   ],
   [
     "New or reloaded tabs use your defaults when there is no remembered site setting.",
@@ -2201,20 +2201,20 @@ window.SoundAdjusterLocales = [
     "Enquanto «Remember» estiver ativo, as alterações são guardadas. Desative-o para deixar de recuperar automaticamente as definições atuais desse site. O som do separador aberto não muda. Os perfis com nome podem ser eliminados separadamente em «Manage profiles»."
   ],
   [
-    "Default audio settings: a starting sound for other tabs",
-    "Default audio settings: Standardwerte für andere Tabs",
-    "Default audio settings：ほかのタブに使う共通設定",
-    "Default audio settings: diğer siteler için varsayılan ayarlar",
-    "Default audio settings: ajustes iniciales para otras pestañas",
-    "Default audio settings: definições iniciais para outros separadores"
+    "Set the default audio for other tabs",
+    "Standardwerte für andere Tabs festlegen",
+    "ほかのタブで使う共通設定を決める",
+    "Diğer sekmeler için varsayılan sesi ayarla",
+    "Configura el sonido predeterminado de las demás pestañas",
+    "Defina o som predefinido para os outros separadores"
   ],
   [
-    "Use a global default if you want a consistent starting setup across supported sites. You can still make exceptions by remembering a different setup on a particular website.",
-    "Mit globalen Standardwerten legst du fest, mit welchen Klangeinstellungen unterstützte Websites starten. Für einzelne Websites kannst du trotzdem abweichende Einstellungen speichern.",
-    "対応するサイトで同じ設定から始めたい場合は、共通設定を使います。特定のサイトに別の設定を保存すれば、そのサイトだけ異なる設定を使えます。",
-    "Desteklenen sitelerin aynı ses ayarlarıyla açılmasını istiyorsan varsayılan ayarları belirle. Farklı ayar kullanmak istediğin sitelerde Remember seçeneğini açarak siteye özel ayarları kaydedebilirsin.",
-    "Usa ajustes predeterminados globales si quieres que los sitios compatibles empiecen con la misma configuración. Puedes guardar ajustes distintos para un sitio concreto y usarlos como excepción.",
-    "Utilize definições globais predefinidas se quiser que os sites compatíveis comecem com a mesma configuração. Pode guardar definições diferentes para um site específico e usá-las como exceção."
+    "Default audio settings apply to supported sites. To use different settings on a particular site, open it and turn on Remember after adjusting the sound.",
+    "Die Standardwerte gelten auf unterstützten Websites. Wenn eine Website andere Einstellungen braucht, öffne sie, passe den Klang an und aktiviere Remember.",
+    "共通設定は対応サイトに適用されます。特定のサイトで別の設定を使うには、そのサイトを開いて音を調整し、Rememberをオンにします。",
+    "Varsayılan ses ayarları desteklenen sitelerde kullanılır. Bir sitede farklı ayarlar kullanmak için o siteyi aç, sesi ayarla ve Remember seçeneğini aç.",
+    "Los ajustes predeterminados se aplican a los sitios compatibles. Si necesitas otros ajustes en un sitio concreto, ábrelo, ajusta el sonido y activa Remember.",
+    "As predefinições aplicam-se aos sites compatíveis. Para usar definições diferentes num site, abra-o, ajuste o som e ative Remember."
   ],
   [
     "Open Sound Adjuster’s ⋯ menu and choose Settings and exceptions.",
@@ -2369,12 +2369,12 @@ window.SoundAdjusterLocales = [
     "O Sound Adjuster funciona com áudio e vídeo HTML padrão. O conteúdo protegido, os conteúdos de outra origem e as restrições do navegador podem impedir o processamento. Guardar as definições não permite contornar estas limitações. Consulte a mensagem de disponibilidade na janela da extensão."
   ],
   [
-    "Set it once. Adjust it when you need to.",
-    "Einmal einstellen. Bei Bedarf anpassen.",
-    "一度設定して、必要なときだけ調整。",
-    "Bir kez ayarla. İstediğinde değiştir.",
-    "Configúralo una vez. Ajústalo cuando lo necesites.",
-    "Configure uma vez. Ajuste quando precisar."
+    "Try the controls or read more",
+    "Steuerung ausprobieren oder weiterlesen",
+    "操作を試す・ほかのガイドを読む",
+    "Kontrolleri dene veya diğer rehberlere göz at",
+    "Prueba los controles o consulta más guías",
+    "Experimente os controlos ou consulte mais guias"
   ],
   [
     "Set a default audio level in Firefox, save different sound settings for each website, and adjust the active tab with keyboard shortcuts in Sound Adjuster.",
@@ -2395,7 +2395,7 @@ window.SoundAdjusterLocales = [
   [
     "How to Set a Default Volume in Firefox | Sound Adjuster",
     "Standardlautstärke in Firefox einstellen | Sound Adjuster",
-    "Firefox の標準音量を設定する方法 | Sound Adjuster",
+    "Firefoxで標準音量とサイト別の音声設定を使う | Sound Adjuster",
     "Firefox’ta varsayılan ses seviyesi nasıl ayarlanır? | Sound Adjuster",
     "Cómo configurar el volumen predeterminado en Firefox | Sound Adjuster",
     "Como definir o volume predefinido no Firefox | Sound Adjuster"
@@ -2417,11 +2417,11 @@ window.SoundAdjusterLocales = [
     "Por tropic · Atualizado a 20 de novembro de 2026 · Com base no Sound Adjuster 2.6.0"
   ],
   [
-    "To stop applying defaults, turn off Enabled. The switch saves immediately. The next time a supported tab loads, your remembered settings for that site still apply.",
-    "Um die Standardwerte nicht mehr anzuwenden, schalte Enabled aus. Der Schalter speichert sofort. Wenn eine unterstützte Seite neu geladen wird, gelten weiterhin die gespeicherten Einstellungen für diese Website.",
-    "共通の初期設定を使わない場合は Enabled をオフにします。切り替えはすぐに保存されます。次に対応するタブを開くと、そのサイトの保存済み設定は引き続き適用されます。",
-    "Varsayılan ayarları uygulamayı durdurmak için Enabled seçeneğini kapat. Düğme değişikliği hemen kaydeder. Desteklenen bir sekme tekrar yüklendiğinde, o site için kaydettiğin ayarlar uygulanmaya devam eder.",
-    "Para dejar de aplicar los valores predeterminados, desactiva Enabled. El interruptor guarda el cambio al instante. La próxima vez que cargues una pestaña compatible, seguirán aplicándose los ajustes guardados para ese sitio.",
-    "Para deixar de aplicar as predefinições, desative Enabled. O interruptor guarda a alteração imediatamente. Quando voltar a carregar um separador compatível, continuam a ser aplicadas as definições guardadas para esse site."
+    "Turn off Enabled to stop using the defaults. The change saves automatically. Any settings saved with Remember still apply when you revisit the site.",
+    "Schalte Enabled aus, um die Standardwerte zu deaktivieren. Die Änderung wird automatisch gespeichert. Mit Remember gespeicherte Einstellungen gelten beim nächsten Besuch der Website weiterhin.",
+    "共通設定を使わない場合は、Enabledをオフにします。変更は自動で保存されます。Rememberで保存した設定は、次にそのサイトを開いたときも適用されます。",
+    "Varsayılan ayarları kapatmak için Enabled seçeneğini kapat. Değişiklik otomatik kaydedilir. Siteye tekrar girdiğinde Remember ile kaydettiğin ayarlar uygulanmaya devam eder.",
+    "Desactiva Enabled para dejar de usar los ajustes predeterminados. El cambio se guarda automáticamente. Los ajustes guardados con Remember se siguen aplicando cuando vuelves al sitio.",
+    "Desative Enabled para deixar de usar as predefinições. A alteração é guardada automaticamente. As definições guardadas com Remember continuam a ser aplicadas quando volta ao site."
   ]
 ];
