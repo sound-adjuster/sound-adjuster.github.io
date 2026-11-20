@@ -377,12 +377,12 @@ window.SoundAdjusterLocales = [
     "ao seu gosto"
   ],
   [
-    "Turn up quiet videos, adjust the tone, and save your settings for the sites you use.",
-    "Mach leise Videos lauter, passe den Klang an und speichere deine Einstellungen für die Websites, die du nutzt.",
-    "音が小さい動画の音量を上げ、音質を調整。よく使うサイトごとに設定を保存できます。",
-    "Sesi kısık videoların sesini aç, ses tonunu ayarla ve kullandığın siteler için ayarlarını kaydet.",
-    "Sube el volumen de los vídeos que se oyen bajo, ajusta el tono y guarda tus ajustes para las páginas que visitas.",
-    "Aumente o volume de vídeos com som baixo, ajuste o som e guarde as suas definições para os sites que usa."
+    "Boost quiet audio up to 5× on supported Firefox players, fine-tune it with a 5-band equalizer, and save settings for each site.",
+    "Verstärke leisen Ton in unterstützten Firefox-Playern bis auf das Fünffache, passe den Klang mit einem 5-Band-Equalizer an und speichere deine Einstellungen pro Website.",
+    "Firefox の対応プレーヤーで小さな音を最大5倍に増幅し、5バンドイコライザーで音質を調整。設定はサイトごとに保存できます。",
+    "Firefox’ta desteklenen oynatıcılarda sesi 5 kata kadar yükselt, 5 bantlı ekolayzırla ince ayar yap ve ayarlarını siteye göre kaydet.",
+    "Amplifica el sonido hasta 5 veces en reproductores compatibles de Firefox, ajusta el tono con un ecualizador de 5 bandas y guarda tus ajustes por sitio.",
+    "Aumente o som até 5 vezes nos leitores compatíveis do Firefox, ajuste-o com um equalizador de 5 bandas e guarde as definições por site."
   ],
   [
     "Get Sound Adjuster for Firefox",
@@ -961,12 +961,12 @@ window.SoundAdjusterLocales = [
     "Entre em contacto"
   ],
   [
-    "Sound Adjuster - Volume Control for Firefox",
-    "Sound Adjuster - Lautstärkeregler für Firefox",
-    "Sound Adjuster - Firefox の音量調整",
-    "Sound Adjuster - Firefox için Ses Kontrolü",
-    "Sound Adjuster - Control de volumen para Firefox",
-    "Sound Adjuster - Controlo de volume para o Firefox"
+    "Sound Adjuster – Firefox Volume Booster & Equalizer",
+    "Sound Adjuster – Lautstärke-Booster & Equalizer für Firefox",
+    "Sound Adjuster – Firefox 用音量ブースターとイコライザー",
+    "Sound Adjuster – Firefox için Ses Yükseltici ve Ekolayzır",
+    "Sound Adjuster – Amplificador de volumen y ecualizador para Firefox",
+    "Sound Adjuster – Amplificador de volume e equalizador para o Firefox"
   ],
   [
     "Sound Adjuster - Get the sound right.",
@@ -977,12 +977,12 @@ window.SoundAdjusterLocales = [
     "Sound Adjuster - O som, ao seu gosto."
   ],
   [
-    "Turn up quiet videos, adjust the tone, and save sound settings for the sites you use. A free, open-source volume control and equalizer for Firefox.",
-    "Mach leise Videos lauter, passe den Klang an und speichere Einstellungen pro Website. Kostenloser, quelloffener Lautstärkeregler und Equalizer für Firefox.",
-    "音が小さい動画の音量を上げ、音質を調整し、サイトごとに設定を保存。Firefox 用の無料・オープンソースの音量調整とイコライザー。",
-    "Sesi kısık videoların sesini aç, tonu ayarla ve siteye özel ayarlarını kaydet. Firefox için ücretsiz, açık kaynaklı ses kontrolü ve ekolayzır.",
-    "Sube el volumen de vídeos, ajusta el tono y guarda ajustes por página. Control de volumen y ecualizador gratuito y de código abierto para Firefox.",
-    "Aumente o volume de vídeos, ajuste o tom e guarde definições por site. Controlo de volume e equalizador gratuito e de código aberto para o Firefox."
+    "Free, open-source volume booster and 5-band equalizer for Firefox. Boost quiet audio up to 5× and save volume, balance, and EQ for each site.",
+    "Kostenloser Open-Source-Lautstärke-Booster und 5-Band-Equalizer für Firefox. Verstärke leisen Ton bis auf das Fünffache und speichere Klangeinstellungen pro Website.",
+    "Firefox 用の無料・オープンソースの音量ブースターと5バンドイコライザー。音を最大5倍に増幅し、設定をサイトごとに保存できます。",
+    "Firefox için ücretsiz, açık kaynaklı ses yükseltici ve 5 bantlı ekolayzır. Sesi 5 kata kadar yükselt ve ses ayarlarını siteye göre kaydet.",
+    "Amplificador de volumen y ecualizador de 5 bandas gratis y de código abierto para Firefox. Aumenta el sonido hasta 5 veces y guarda tus ajustes por sitio.",
+    "Amplificador de volume e equalizador de 5 bandas gratuito e de código aberto para o Firefox. Aumente o som até 5 vezes e guarde as definições por site."
   ],
   [
     "Volume, equalizer, and stereo balance for Firefox. Save the settings you like for each site.",
@@ -2391,5 +2391,37 @@ window.SoundAdjusterLocales = [
     "Bu rehberi başka bir dilde oku",
     "Leer esta guía en otro idioma",
     "Ler este guia noutro idioma"
+  ],
+  [
+    "How to Set a Default Volume in Firefox | Sound Adjuster",
+    "Standardlautstärke in Firefox einstellen | Sound Adjuster",
+    "Firefox の標準音量を設定する方法 | Sound Adjuster",
+    "Firefox’ta varsayılan ses seviyesi nasıl ayarlanır? | Sound Adjuster",
+    "Cómo configurar el volumen predeterminado en Firefox | Sound Adjuster",
+    "Como definir o volume predefinido no Firefox | Sound Adjuster"
+  ],
+  [
+    "Set a default volume for Firefox tabs and save separate volume, balance, and EQ settings for each website with Sound Adjuster.",
+    "Lege mit Sound Adjuster eine Standardlautstärke für Firefox-Tabs fest und speichere Lautstärke, Balance und EQ für jede Website separat.",
+    "Sound Adjuster で Firefox のタブの標準音量を設定し、音量、バランス、EQ をサイトごとに保存できます。",
+    "Sound Adjuster ile Firefox sekmeleri için varsayılan sesi belirle, her site için ayrı ses seviyesi, denge ve EQ ayarları kaydet.",
+    "Configura el volumen predeterminado de las pestañas de Firefox y guarda el volumen, el balance y el ecualizador por sitio con Sound Adjuster.",
+    "Defina o volume predefinido dos separadores do Firefox e guarde o volume, o balanço e a equalização por site com o Sound Adjuster."
+  ],
+  [
+    "By tropic · Updated 20 November 2026 · Based on Sound Adjuster 2.6.0",
+    "Von tropic · Aktualisiert am 20. November 2026 · Für Sound Adjuster 2.6.0",
+    "tropic 著 · 2026年11月20日更新 · Sound Adjuster 2.6.0 対応",
+    "Yazan tropic · 20 Kasım 2026’da güncellendi · Sound Adjuster 2.6.0 için",
+    "Por tropic · Actualizado el 20 de noviembre de 2026 · Basado en Sound Adjuster 2.6.0",
+    "Por tropic · Atualizado a 20 de novembro de 2026 · Com base no Sound Adjuster 2.6.0"
+  ],
+  [
+    "To stop applying defaults, turn off Enabled. The switch saves immediately. The next time a supported tab loads, your remembered settings for that site still apply.",
+    "Um die Standardwerte nicht mehr anzuwenden, schalte Enabled aus. Der Schalter speichert sofort. Wenn eine unterstützte Seite neu geladen wird, gelten weiterhin die gespeicherten Einstellungen für diese Website.",
+    "共通の初期設定を使わない場合は Enabled をオフにします。切り替えはすぐに保存されます。次に対応するタブを開くと、そのサイトの保存済み設定は引き続き適用されます。",
+    "Varsayılan ayarları uygulamayı durdurmak için Enabled seçeneğini kapat. Düğme değişikliği hemen kaydeder. Desteklenen bir sekme tekrar yüklendiğinde, o site için kaydettiğin ayarlar uygulanmaya devam eder.",
+    "Para dejar de aplicar los valores predeterminados, desactiva Enabled. El interruptor guarda el cambio al instante. La próxima vez que cargues una pestaña compatible, seguirán aplicándose los ajustes guardados para ese sitio.",
+    "Para deixar de aplicar as predefinições, desative Enabled. O interruptor guarda a alteração imediatamente. Quando voltar a carregar um separador compatível, continuam a ser aplicadas as definições guardadas para esse site."
   ]
 ];
