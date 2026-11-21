@@ -1833,12 +1833,12 @@ window.SoundAdjusterLocales = [
     "Os valores predefinidos guardados da demonstração também ficam neste dispositivo e são aplicados após recarregar quando Lembrar está desativado. São mantidos até limpar os dados deste site nas definições do navegador."
   ],
   [
-    "Last updated: 5 October 2026",
-    "Zuletzt aktualisiert: 5. Oktober 2026",
-    "最終更新日：2026年10月5日",
-    "Son güncelleme: 5 Ekim 2026",
-    "Última actualización: 5 de octubre de 2026",
-    "Última atualização: 5 de outubro de 2026"
+    "Last updated: 22 November 2026",
+    "Zuletzt aktualisiert: 22. November 2026",
+    "最終更新日：2026年11月22日",
+    "Son güncelleme: 22 Kasım 2026",
+    "Última actualización: 22 de noviembre de 2026",
+    "Última atualização: 22 de novembro de 2026"
   ],
   [
     "Enable JavaScript to use the audio demo.",
@@ -2423,5 +2423,205 @@ window.SoundAdjusterLocales = [
     "Varsayılan ayarları kapatmak için Enabled seçeneğini kapat. Değişiklik otomatik kaydedilir. Siteye tekrar girdiğinde Remember ile kaydettiğin ayarlar uygulanmaya devam eder.",
     "Desactiva Enabled para dejar de usar los ajustes predeterminados. El cambio se guarda automáticamente. Los ajustes guardados con Remember se siguen aplicando cuando vuelves al sitio.",
     "Desative Enabled para deixar de usar as predefinições. A alteração é guardada automaticamente. As definições guardadas com Remember continuam a ser aplicadas quando volta ao site."
+  ],
+  [
+    "Feedback",
+    "Feedback",
+    "フィードバック",
+    "Geri bildirim",
+    "Comentarios",
+    "Comentários"
+  ],
+  [
+    "Sound Adjuster - Feedback",
+    "Sound Adjuster – Feedback",
+    "Sound Adjuster – フィードバック",
+    "Sound Adjuster – Geri bildirim",
+    "Sound Adjuster – Comentarios",
+    "Sound Adjuster – Comentários"
+  ],
+  [
+    "Send feedback about Sound Adjuster.",
+    "Gib Feedback zu Sound Adjuster.",
+    "Sound Adjuster へのフィードバックを送信できます。",
+    "Sound Adjuster hakkında geri bildirim gönder.",
+    "Envía comentarios sobre Sound Adjuster.",
+    "Envie comentários sobre o Sound Adjuster."
+  ],
+  [
+    "Send feedback.",
+    "Feedback geben.",
+    "フィードバックを送る",
+    "Geri bildirim ver.",
+    "Envía tus comentarios.",
+    "Envie os seus comentários."
+  ],
+  [
+    "Found a bug or have an idea for Sound Adjuster?",
+    "Hast du einen Fehler gefunden oder eine Idee für Sound Adjuster?",
+    "Sound Adjuster の不具合や改善案はありますか？",
+    "Sound Adjuster’da bir hata mı fark ettin, yoksa bir önerin mi var?",
+    "¿Has encontrado un error o tienes una idea para Sound Adjuster?",
+    "Encontrou um erro ou tem uma ideia para o Sound Adjuster?"
+  ],
+  [
+    "Browse reports on GitHub",
+    "Meldungen auf GitHub ansehen",
+    "GitHub で報告を見る",
+    "GitHub’daki bildirimlere göz at",
+    "Ver informes en GitHub",
+    "Ver relatórios no GitHub"
+  ],
+  [
+    "Feedback type",
+    "Art des Feedbacks",
+    "フィードバックの種類",
+    "Geri bildirim türü",
+    "Tipo de comentario",
+    "Tipo de comentário"
+  ],
+  [
+    "Bug report",
+    "Fehlermeldung",
+    "不具合の報告",
+    "Hata bildirimi",
+    "Informe de error",
+    "Relatório de erro"
+  ],
+  [
+    "Feature request",
+    "Funktionswunsch",
+    "機能の提案",
+    "Özellik önerisi",
+    "Sugerencia de función",
+    "Sugestão de funcionalidade"
+  ],
+  [
+    "General feedback",
+    "Allgemeines Feedback",
+    "その他のご意見",
+    "Genel görüş",
+    "Comentario general",
+    "Comentário geral"
+  ],
+  [
+    "Your message",
+    "Deine Nachricht",
+    "メッセージ",
+    "Mesajın",
+    "Tu mensaje",
+    "A sua mensagem"
+  ],
+  [
+    "Tell us about your experience.",
+    "Erzähl uns von deiner Erfahrung.",
+    "使ってみた感想をお聞かせください。",
+    "Sound Adjuster deneyimini anlat.",
+    "Cuéntanos tu experiencia.",
+    "Conte-nos a sua experiência."
+  ],
+  [
+    "Feedback is anonymous.",
+    "Dein Feedback ist anonym.",
+    "匿名で送信できます。",
+    "Geri bildirim anonimdir.",
+    "Los comentarios son anónimos.",
+    "Os comentários são anónimos."
+  ],
+  [
+    "We only receive the category you choose and the message you write. Please leave out personal details.",
+    "Wir erhalten nur die gewählte Kategorie und deine Nachricht. Bitte gib keine persönlichen Daten an.",
+    "選んだ種類と入力したメッセージだけが届きます。個人情報は入力しないでください。",
+    "Yalnızca seçtiğin kategori ve yazdığın mesaj bize ulaşır. Mesajına kişisel bilgi ekleme.",
+    "Solo recibimos la categoría que elijas y el mensaje que escribas. Evita incluir datos personales.",
+    "Só recebemos a categoria escolhida e a mensagem que escrever. Evite incluir dados pessoais."
+  ],
+  [
+    "Send feedback",
+    "Feedback senden",
+    "フィードバックを送信",
+    "Geri bildirim gönder",
+    "Enviar comentario",
+    "Enviar comentário"
+  ],
+  [
+    "Feedback delivery is not available yet.",
+    "Feedback kann noch nicht gesendet werden.",
+    "フィードバックの送信はまだ利用できません。",
+    "Geri bildirim gönderimi henüz kullanılamıyor.",
+    "El envío de comentarios aún no está disponible.",
+    "O envio de comentários ainda não está disponível."
+  ],
+  [
+    "Enter a message before sending.",
+    "Gib vor dem Senden eine Nachricht ein.",
+    "送信する前にメッセージを入力してください。",
+    "Göndermeden önce bir mesaj yaz.",
+    "Escribe un mensaje antes de enviarlo.",
+    "Escreva uma mensagem antes de enviar."
+  ],
+  [
+    "Sending feedback…",
+    "Feedback wird gesendet…",
+    "送信中…",
+    "Geri bildirim gönderiliyor…",
+    "Enviando comentario…",
+    "A enviar comentário…"
+  ],
+  [
+    "Your feedback could not be sent. Please try again.",
+    "Dein Feedback konnte nicht gesendet werden. Bitte versuche es erneut.",
+    "送信できませんでした。もう一度お試しください。",
+    "Geri bildirimin gönderilemedi. Tekrar dene.",
+    "No hemos podido enviar tu comentario. Inténtalo de nuevo.",
+    "Não foi possível enviar o seu comentário. Tente novamente."
+  ],
+  [
+    "Thanks. Your feedback was sent.",
+    "Danke. Dein Feedback wurde gesendet.",
+    "ご協力ありがとうございます。送信しました。",
+    "Teşekkürler. Geri bildirimin gönderildi.",
+    "Gracias. Tu comentario se ha enviado.",
+    "Obrigado. O seu comentário foi enviado."
+  ],
+  [
+    "Our feedback form asks only for a category and message. Leave out personal details. We receive the feedback by email.",
+    "Unser Feedbackformular fragt nur nach einer Kategorie und deiner Nachricht. Bitte gib keine persönlichen Daten an. Wir erhalten dein Feedback per E-Mail.",
+    "フィードバックフォームには、種類とメッセージだけを入力します。個人情報は入力しないでください。フィードバックはメールで受け取ります。",
+    "Geri bildirim formunda yalnızca kategori ve mesaj istenir. Kişisel bilgi ekleme. Geri bildirimleri e-postayla alırız.",
+    "El formulario solo pide una categoría y un mensaje. Evita incluir datos personales. Recibimos los comentarios por correo electrónico.",
+    "O formulário só pede uma categoria e uma mensagem. Evite incluir dados pessoais. Recebemos os comentários por e-mail."
+  ],
+  [
+    "Formspree handles the submission and may use your IP address to operate and secure the service.",
+    "Formspree verarbeitet deine Einsendung und kann deine IP-Adresse für den Betrieb und die Sicherheit des Dienstes verwenden.",
+    "Formspree が送信を処理し、サービスの運用やセキュリティのために IP アドレスを使用する場合があります。",
+    "Gönderimi Formspree işler. Hizmet, işletim ve güvenlik için IP adresini kullanabilir.",
+    "Formspree procesa el envío y puede utilizar tu dirección IP para operar y proteger el servicio.",
+    "A Formspree processa o envio e pode utilizar o seu endereço IP para operar e proteger o serviço."
+  ],
+  [
+    "Formspree privacy policy",
+    "Datenschutzerklärung von Formspree",
+    "Formspree のプライバシーポリシー",
+    "Formspree gizlilik politikası",
+    "Política de privacidad de Formspree",
+    "Política de privacidade da Formspree"
+  ],
+  [
+    "Formspree delivers these submissions to us by email and stores them in its dashboard. Formspree may process connection data, such as IP addresses, to operate its service and prevent abuse.",
+    "Formspree leitet diese Einsendungen per E-Mail an uns weiter und speichert sie im Dashboard. Der Dienst kann Verbindungsdaten wie IP-Adressen für den Betrieb und zur Missbrauchsbekämpfung verarbeiten.",
+    "Formspree は送信内容をメールで当方に届け、ダッシュボードにも保存します。同サービスは運用や不正利用防止のために、IP アドレスなどの接続情報を処理する場合があります。",
+    "Formspree, gönderimleri bize e-postayla iletir ve kendi panelinde saklar. Hizmetin işletilmesi ve kötüye kullanımın önlenmesi için IP adresi gibi bağlantı bilgilerini işleyebilir.",
+    "Formspree nos envía los comentarios por correo electrónico y los guarda en su panel. Puede tratar datos de conexión, como las direcciones IP, para operar el servicio y evitar abusos.",
+    "A Formspree envia-nos os comentários por e-mail e guarda-os no painel. Pode tratar dados de ligação, como endereços IP, para operar o serviço e prevenir utilizações indevidas."
+  ],
+  [
+    "The feedback email does not include your IP address.",
+    "Deine IP-Adresse steht nicht in der Feedback-E-Mail.",
+    "フィードバック通知メールに IP アドレスは含まれません。",
+    "IP adresin bize gelen geri bildirim e-postasına eklenmez.",
+    "Tu dirección IP no se incluye en el correo de notificación.",
+    "O seu endereço IP não é incluído no e-mail de notificação."
   ]
 ];

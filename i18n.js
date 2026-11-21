@@ -36,6 +36,7 @@
     texts.forEach(({ node, source, before, after }) => { node.textContent = before + t(source) + after; });
     attributes.forEach(({ node, attr, source }) => node.setAttribute(attr, t(source)));
     selector.value = language;
+    selector.parentElement.dataset.languageCode = language.toUpperCase();
     document.querySelectorAll('[data-audio-guide]').forEach(link => {
       link.setAttribute('href', `default-audio-settings${language === 'en' ? '' : '-' + language}.html${link.dataset.audioGuide}`);
     });

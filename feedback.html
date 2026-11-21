@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f4ef">
+  <title>Sound Adjuster - Feedback</title>
+  <meta name="description" content="Send feedback about Sound Adjuster.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <script src="theme.js"></script>
+  <link rel="stylesheet" href="styles.css?v=20261122-feedback">
+  <script src="locales.js?v=20261122-feedback-ip" defer></script>
+  <script src="i18n.js?v=20261122-feedback" defer></script>
+  <script src="feedback.js?v=20261122-formspree" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="brand" href="./" aria-label="Sound Adjuster home"><img src="assets/icon.svg" width="32" height="32" alt=""><span>Sound Adjuster</span></a>
+    <div class="header-actions">
+      <nav aria-label="Main navigation"><a class="nav-how" href="./#features">How it works</a><a class="nav-questions" href="./#questions">Questions</a><a class="source-link" href="https://github.com/tropicaddons/sound-adjuster" aria-label="Open source on GitHub"><span class="github-mark" aria-hidden="true"></span><span class="source-label">Open source</span><span aria-hidden="true">↗</span></a><a class="nav-feedback" href="feedback.html" aria-current="page">Feedback</a></nav>
+      <label class="language-picker"><span class="visually-hidden">Language</span><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></svg><select id="site-language" aria-label="Language"><option value="en" lang="en">English</option><option value="de" lang="de">Deutsch</option><option value="ja" lang="ja">日本語</option><option value="tr" lang="tr">Türkçe</option><option value="es" lang="es">Español</option><option value="pt" lang="pt">Português</option></select></label>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Dark theme" aria-pressed="false" title="Switch theme"><svg class="moon-icon" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.3 14A8.5 8.5 0 0 1 10 3.7 8.5 8.5 0 1 0 20.3 14Z"/></svg><svg class="sun-icon" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.4 1.4m11.2 11.2L19 19M5 19l1.4-1.4M17.6 6.4 19 5"/></svg></button>
+    </div>
+  </header>
+  <main id="main" class="feedback-page wrap">
+    <div>
+      <h1>Send feedback.</h1>
+      <p class="feedback-intro">Found a bug or have an idea for Sound Adjuster?</p>
+      <a class="feedback-issues" href="https://github.com/tropicaddons/sound-adjuster/issues">Browse reports on GitHub</a>
+    </div>
+    <form class="feedback-panel" id="feedback-form" method="post" data-form-id="mjywavdz">
+      <fieldset>
+        <legend>Feedback type</legend>
+        <div class="feedback-options">
+          <label class="feedback-option"><input type="radio" name="category" value="bug"> Bug report</label>
+          <label class="feedback-option"><input type="radio" name="category" value="feature"> Feature request</label>
+          <label class="feedback-option"><input type="radio" name="category" value="general" checked> General feedback</label>
+        </div>
+      </fieldset>
+      <label class="feedback-label" for="feedback-message">Your message</label>
+      <textarea id="feedback-message" name="message" required maxlength="1200" aria-describedby="feedback-privacy feedback-status" placeholder="Tell us about your experience."></textarea>
+      <div id="feedback-privacy">
+        <p class="feedback-privacy"><strong>Feedback is anonymous.</strong> We only receive the category you choose and the message you write. Please leave out personal details.</p>
+        <p class="feedback-privacy">Formspree handles the submission and may use your IP address to operate and secure the service. <span>The feedback email does not include your IP address.</span> <a href="https://formspree.io/legal/privacy-policy/" rel="noreferrer">Formspree privacy policy</a></p>
+      </div>
+      <button class="button" id="feedback-submit" type="submit" disabled>Send feedback</button>
+      <p class="feedback-status" id="feedback-status" role="status" data-i18n-dynamic>Feedback delivery is not available yet.</p>
+    </form>
+  </main>
+  <footer class="site-footer wrap"><a class="brand" href="./"><img src="assets/icon.svg" width="24" height="24" alt=""><span>Sound Adjuster</span></a><p>Made by tropic. Free and open source.</p><a class="guides-link" href="guides.html">Listening guides</a><a class="privacy-link" aria-current="page" href="privacy.html">Privacy</a><a href="mailto:tropicaddons@proton.me">Get in touch <span aria-hidden="true">↗</span></a></footer>
+</body>
+</html>

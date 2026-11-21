@@ -10,6 +10,7 @@
   };
   const selector = document.getElementById('site-language');
   selector.value = language;
+  selector.parentElement.dataset.languageCode = language.toUpperCase();
   selector.addEventListener('change', () => {
     if (!languages.includes(selector.value)) return;
     try { localStorage.setItem('sound-adjuster.site-language', selector.value); } catch {}
