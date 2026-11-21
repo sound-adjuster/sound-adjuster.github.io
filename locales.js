@@ -2615,13 +2615,5 @@ window.SoundAdjusterLocales = [
     "Formspree, gönderimleri bize e-postayla iletir ve kendi panelinde saklar. Hizmetin işletilmesi ve kötüye kullanımın önlenmesi için IP adresi gibi bağlantı bilgilerini işleyebilir.",
     "Formspree nos envía los comentarios por correo electrónico y los guarda en su panel. Puede tratar datos de conexión, como las direcciones IP, para operar el servicio y evitar abusos.",
     "A Formspree envia-nos os comentários por e-mail e guarda-os no painel. Pode tratar dados de ligação, como endereços IP, para operar o serviço e prevenir utilizações indevidas."
-  ],
-  [
-    "The feedback email does not include your IP address.",
-    "Deine IP-Adresse steht nicht in der Feedback-E-Mail.",
-    "フィードバック通知メールに IP アドレスは含まれません。",
-    "IP adresin bize gelen geri bildirim e-postasına eklenmez.",
-    "Tu dirección IP no se incluye en el correo de notificación.",
-    "O seu endereço IP não é incluído no e-mail de notificação."
   ]
 ];
